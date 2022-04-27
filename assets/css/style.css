@@ -762,7 +762,7 @@ img {
 /* theme data table style here.. */
 
 .theme-data-table-wrap {
-  max-height: 400px;
+  /* max-height: 400px; */
 }
 
 .theme-data-table {
@@ -771,7 +771,7 @@ img {
 
 .table {
   margin: 0;
-  border-color: transparent;
+  border-color: var(--bs-D2D2D2);
 }
 
 .table > tbody {
@@ -779,27 +779,31 @@ img {
 }
 
 .table > :not(caption) > * > * {
-  padding: 8px 8px;
+  padding: 34px 40px;
 }
 
 .table > :not(:last-child) > :last-child > * {
-  border-bottom-color: blue;
+  border-bottom-color: var(--bs-D2D2D2);
 }
-
+.border-primary {
+  border-color: var(--bs-D2D2D2) !important;
+}
 .theme-th-styled {
-  font-family: var(--Open-sans);
-  font-weight: 500;
-  font-size: var(--fs-16);
-  line-height: var(--lh-16);
+  font-family: var(--Montserrat);
+  font-weight: 400;
+  font-size: var(--fs-26);
+  line-height: var(--lh-34);
   color: var(--bs-000000);
+  letter-spacing: var(--ls-0-78);
 }
 
 .theme-td-styled {
-  font-family: var(--Open-sans);
-  font-weight: 500;
-  font-size: var(--fs-14);
-  line-height: var(--lh-14);
-  color: var(--bs-7c7c7c);
+  font-family: var(--Avenir);
+  font-weight: 400;
+  font-size: var(--fs-18);
+  line-height: var(--lh-21);
+  color: var(--bs-888888);
+  letter-spacing: var(--ls-0-54);
 }
 
 .table-first-col {
@@ -1297,4 +1301,13 @@ img {
 /* contact page Style Here.. */
 .contact-page-inner {
   column-gap: 94px;
+}
+/* Landing page Style Here.. */
+/* header style here... */
+.theme-header {
+  min-height: 110px;
+  background-color: royalblue;
+}
+.hero-area {
+  min-height: calc(100vh - 110px);
 }

@@ -15,93 +15,124 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+<!-- baskypi Landing Page -->
 
 <body>
-    <!-- Page Header -->
-    <header class="prifix-header-template">
-        <div class="header-template-left">Running.....</div>
-        <div class="header-template-right">
-            <!-- user notifications -->
-            <div class="user-notification-wrap">
-                <div class="dropdown">
-                    <div class="dropdown-toggle notification-dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://app.roboimages.com/public/assets/img/notification-icon.png" alt="userlogo">
+    <!-- baskypi Header Area -->
+    <header class="theme-header"></header>
+    <main class="baskypi-page-wrap">
+        <!-- baskypi Hero Area -->
+        <section class="hero-area d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Hero Leftside content -->
+                    <div class="col-md-6">
+                        <h1 class="page-title pb-50">Buy, Sell & Trade Your Crypto</h1>
+                        <p class="section-des pb-50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+                        <button class="btn btn-primary">Get Started Trail</button>
                     </div>
-                    <ul class="dropdown-menu notification-dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item user-dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item user-dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item user-dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- user profile -->
-            <div class="user-profile-wrap">
-                <div class="dropdown">
-                    <div class="dropdown-toggle user-dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="user-profile-img" src="https://app.roboimages.com/public///assets/img/default-user.png" alt="userlogo">
-                        <p class="user-profile-name">AL AMIN</p>
+                    <!-- Hero rightside img -->
+                    <div class="col-md-6">
+                        <img src="assets/images/illust.png" alt="Hero Image">
                     </div>
-                    <ul class="dropdown-menu user-dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item  user-dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item  user-dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item  user-dropdown-item" href="#">Something else here</a></li>
-                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- Page aside -->
-    <aside class="prifix-sidenav-wrap">
-        <div class="prifix-logo-wrapper">
-            <div class="d-flex justify-content-between position-relative">
-                <a href="#" class="company-home-link">
-                    <img src="http://localhost/roboimage/public/assets/img/robo_logo.png" alt="avatar" class="img-fluid">
-                </a>
-                <div id="toggler" class="side-nav-arror-wrap" data-toggle="sidenav" data-target="#full-screen-example">
-                    <img src="http://localhost/roboimage/public/assets/img/nav-arrow.png" alt="">
+        </section>
+        <!-- Ranking Crypto Currency Area -->
+        <section class="ranking-crypto-currency-area">
+            <div class="container">
+                <div class="d-flex align-items-end justify-content-between pb-40">
+                    <h2 class="section-title">Ranking Crypto Currency</h2>
+                    <a href="#" class="btn btn-link p-0">View More Markets</a>
+                </div>
+                <!-- Ranking Data Table -->
+                <div class="theme-data-table-wrap table-responsive">
+                    <table class="table theme-data-table table-bordered border-primary">
+                        <thead>
+                            <tr>
+                                <th class="theme-th-styled table-first-col">Name</th>
+                                <th class="theme-th-styled table-second-col">Last Price</th>
+                                <th class="theme-th-styled table-third-col">Change</th>
+                                <th class="theme-th-styled table-four-col">Chart</th>
+                                <th class="theme-th-styled table-five-col">Market Cap</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="theme-td-styled table-first-col">MD AL AMIN</td>
+                                <td class="theme-td-styled table-second-col">$320.4</td>
+                                <td class="theme-td-styled table-third-col">+5.38%</td>
+                                <td class="theme-td-styled table-four-col">
+                                    <img src="assets/images/strong-currency.png" alt="strong Currency">
+                                </td>
+                                <td class="table-five-col">$49,530M</td>
+                            </tr>
+                            <tr>
+                                <td class="theme-td-styled table-first-col">Micheal John Doe</td>
+                                <td class="theme-td-styled table-second-col">icheal.john@gmail.com</td>
+                                <td class="theme-td-styled table-third-col">Otto.com</td>
+                                <td class="theme-td-styled table-four-col">Los Angeles, California,United States</td>
+                                <td class="table-five-col">
+                                    <div class="d-flex gap-3">
+                                        <button class="btn btn-icon btn-outline-primary-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                                <circle cx="12" cy="12" r="3" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-icon btn-outline-secondary-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
+                                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-icon btn-outline-danger-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                                <polyline points="3 6 5 6 21 6" />
+                                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                                                <line x1="10" y1="11" x2="10" y2="17" />
+                                                <line x1="14" y1="11" x2="14" y2="17" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="theme-td-styled table-first-col">Dummy Micheal John</td>
+                                <td class="theme-td-styled table-second-col">dummy@doe@gmail.com</td>
+                                <td class="theme-td-styled table-third-col">facebook.com</td>
+                                <td class="theme-td-styled table-four-col">Chef Marina Bay Sands</td>
+                                <td class="table-five-col">
+                                    <div class="d-flex gap-3">
+                                        <button class="btn btn-icon btn-outline-primary-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                                <circle cx="12" cy="12" r="3" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-icon btn-outline-secondary-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
+                                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-icon btn-outline-danger-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                                <polyline points="3 6 5 6 21 6" />
+                                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                                                <line x1="10" y1="11" x2="10" y2="17" />
+                                                <line x1="14" y1="11" x2="14" y2="17" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </div>
-        <div class="prifix-sidenavs-wrap">
-            <ul class="sidenav-menu">
-                <li class="sidenav-item" data-menu="dashboard" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Dashboard">
-                    <a class="sidenav-link sidenav-link-active" href="#">
-                        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="sidenav-icon" d="M10.7916 9.33337H2.04159C0.915799 9.33337 0 8.41757 0 7.29157V2.04159C0 0.915799 0.915799 0 2.04159 0H10.7916C11.9176 0 12.8334 0.915799 12.8334 2.04159V7.29157C12.8334 8.41757 11.9176 9.33337 10.7916 9.33337ZM2.04159 1.74999C1.88073 1.74999 1.74999 1.88073 1.74999 2.04159V7.29157C1.74999 7.45264 1.88073 7.58338 2.04159 7.58338H10.7916C10.9526 7.58338 11.0834 7.45264 11.0834 7.29157V2.04159C11.0834 1.88073 10.9526 1.74999 10.7916 1.74999H2.04159Z" fill="#707070"></path>
-                            <path class="sidenav-icon" d="M10.7916 27.9999H2.04159C0.915799 27.9999 0 27.0841 0 25.9583V13.7084C0 12.5824 0.915799 11.6666 2.04159 11.6666H10.7916C11.9176 11.6666 12.8334 12.5824 12.8334 13.7084V25.9583C12.8334 27.0841 11.9176 27.9999 10.7916 27.9999ZM2.04159 13.4166C1.88073 13.4166 1.74999 13.5473 1.74999 13.7084V25.9583C1.74999 26.1192 1.88073 26.2499 2.04159 26.2499H10.7916C10.9526 26.2499 11.0834 26.1192 11.0834 25.9583V13.7084C11.0834 13.5473 10.9526 13.4166 10.7916 13.4166H2.04159Z" fill="#707070"></path>
-                            <path class="sidenav-icon" d="M25.9583 28H17.2083C16.0823 28 15.1665 27.0842 15.1665 25.9584V20.7084C15.1665 19.5824 16.0823 18.6666 17.2083 18.6666H25.9583C27.0841 18.6666 27.9999 19.5824 27.9999 20.7084V25.9584C27.9999 27.0842 27.0841 28 25.9583 28ZM17.2083 20.4166C17.0472 20.4166 16.9165 20.5474 16.9165 20.7084V25.9584C16.9165 26.1193 17.0472 26.25 17.2083 26.25H25.9583C26.1191 26.25 26.2499 26.1193 26.2499 25.9584V20.7084C26.2499 20.5474 26.1191 20.4166 25.9583 20.4166H17.2083Z" fill="#707070"></path>
-                            <path class="sidenav-icon" d="M25.9583 16.3333H17.2083C16.0823 16.3333 15.1665 15.4175 15.1665 14.2915V2.04159C15.1665 0.915799 16.0823 0 17.2083 0H25.9583C27.0841 0 27.9999 0.915799 27.9999 2.04159V14.2915C27.9999 15.4175 27.0841 16.3333 25.9583 16.3333ZM17.2083 1.74999C17.0472 1.74999 16.9165 1.88073 16.9165 2.04159V14.2915C16.9165 14.4526 17.0472 14.5834 17.2083 14.5834H25.9583C26.1191 14.5834 26.2499 14.4526 26.2499 14.2915V2.04159C26.2499 1.88073 26.1191 1.74999 25.9583 1.74999H17.2083Z" fill="#707070"></path>
-                        </svg>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-
-                <li class="sidenav-item" data-menu="image-templates" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Template">
-                    <a class="sidenav-link" href="#">
-                        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="sidenav-icon" d="M24.4221 0H3.57793C1.60502 0 0 1.60508 0 3.57798V24.4221C0 26.3949 1.60502 28 3.57793 28H24.4221C26.395 28 28 26.3949 28 24.422V3.57798C28 1.60508 26.395 0 24.4221 0ZM26.3507 24.4221C26.3507 25.4856 25.4855 26.3507 24.4221 26.3507H3.57793C2.51442 26.3507 1.64921 25.4855 1.64921 24.4221V21.4139L7.07722 16.7955C7.2753 16.6269 7.56427 16.6253 7.7642 16.7914L11.1643 19.6148C11.4922 19.8869 11.9734 19.8646 12.2747 19.563L20.3536 11.4718C20.4997 11.3255 20.6699 11.3113 20.7588 11.3158C20.8474 11.3204 21.0155 11.352 21.1459 11.5125L26.3508 17.9213V24.4221H26.3507ZM26.3507 15.3051L22.426 10.4726C22.0368 9.99332 21.4599 9.7003 20.8433 9.66864C20.227 9.63747 19.6228 9.86945 19.1866 10.3064L11.6392 17.8654L8.81792 15.5226C7.99985 14.8433 6.81838 14.8503 6.00846 15.5395L1.64921 19.2485V3.57798C1.64921 2.51448 2.51442 1.64927 3.57793 1.64927H24.4221C25.4856 1.64927 26.3507 2.51448 26.3507 3.57798V15.3051Z" fill="#707070"></path>
-                            <path class="sidenav-icon" d="M8.81243 3.44507C6.61973 3.44507 4.83594 5.22897 4.83594 7.42156C4.83594 9.6142 6.61979 11.3981 8.81243 11.3981C11.0051 11.3981 12.7889 9.6142 12.7889 7.42156C12.7889 5.22892 11.0051 3.44507 8.81243 3.44507ZM8.81243 9.74884C7.52913 9.74884 6.48515 8.7048 6.48515 7.42156C6.48515 6.13826 7.52913 5.09428 8.81243 5.09428C10.0957 5.09428 11.1397 6.13832 11.1397 7.42156C11.1397 8.7048 10.0957 9.74884 8.81243 9.74884Z" fill="#707070"></path>
-                        </svg>
-                        <span>Templates</span>
-                    </a>
-                </li>
-
-                <li class="sidenav-item" data-menu="Settings" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Settings">
-                    <a class="sidenav-link" href="#">
-                        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="sidenav-icon" d="M13.9866 19.1472C11.2933 19.1472 9.10742 16.8393 9.10742 13.9956C9.10742 11.1519 11.2933 8.84393 13.9866 8.84393C16.6799 8.84393 18.8658 11.1519 18.8658 13.9956C18.8658 16.8393 16.6799 19.1472 13.9866 19.1472ZM13.9866 10.9046C12.3732 10.9046 11.0591 12.2921 11.0591 13.9956C11.0591 15.699 12.3732 17.0866 13.9866 17.0866C15.6 17.0866 16.9141 15.699 16.9141 13.9956C16.9141 12.2921 15.6 10.9046 13.9866 10.9046Z" fill="#707070"></path>
-                            <path class="sidenav-icon" d="M18.1636 27.9944C17.8903 27.9944 17.6171 27.9532 17.3439 27.8845C16.5372 27.651 15.8606 27.1152 15.4312 26.3596L15.2751 26.0849C14.5074 24.6836 13.4535 24.6836 12.6859 26.0849L12.5428 26.3459C12.1134 27.1152 11.4368 27.6647 10.6301 27.8845C9.81041 28.118 8.96468 27.9944 8.24907 27.5411L6.01115 26.181C5.21747 25.7002 4.64498 24.9172 4.39777 23.9692C4.16357 23.0213 4.28067 22.046 4.73606 21.208C5.11338 20.5073 5.21747 19.8754 4.99628 19.477C4.77509 19.0786 4.21561 18.8451 3.44796 18.8451C1.54833 18.8451 0 17.2103 0 15.2046V12.7868C0 10.7811 1.54833 9.14627 3.44796 9.14627C4.21561 9.14627 4.77509 8.91273 4.99628 8.51433C5.21747 8.11594 5.12639 7.48401 4.73606 6.78338C4.28067 5.94538 4.16357 4.95627 4.39777 4.02211C4.63197 3.0742 5.20446 2.29116 6.01115 1.81034L8.26208 0.450303C9.73234 -0.470123 11.671 0.0656475 12.5558 1.64548L12.7119 1.92024C13.4796 3.32148 14.5335 3.32148 15.3011 1.92024L15.4442 1.65922C16.329 0.0656475 18.2677 -0.470123 19.7509 0.464041L21.9888 1.82407C22.7825 2.30489 23.355 3.08794 23.6022 4.03584C23.8364 4.98375 23.7193 5.95912 23.2639 6.79712C22.8866 7.49775 22.7825 8.12968 23.0037 8.52807C23.2249 8.92647 23.7844 9.16001 24.552 9.16001C26.4517 9.16001 28 10.7948 28 12.8005V15.2183C28 17.224 26.4517 18.8588 24.552 18.8588C23.7844 18.8588 23.2249 19.0924 23.0037 19.4908C22.7825 19.8892 22.8736 20.5211 23.2639 21.2217C23.7193 22.0597 23.8494 23.0488 23.6022 23.983C23.368 24.9309 22.7955 25.7139 21.9888 26.1948L19.7379 27.5548C19.2435 27.8433 18.71 27.9944 18.1636 27.9944ZM13.987 22.9114C15.145 22.9114 16.2249 23.6808 16.9665 25.0408L17.1097 25.3018C17.2658 25.5903 17.526 25.7964 17.8383 25.8788C18.1506 25.9612 18.4628 25.92 18.723 25.7551L20.974 24.3814C21.3123 24.1753 21.5725 23.8319 21.6766 23.4197C21.7807 23.0076 21.7286 22.5817 21.5335 22.2246C20.7918 20.8783 20.7007 19.4908 21.2732 18.433C21.8457 17.3752 23.0297 16.7707 24.513 16.7707C25.3457 16.7707 26.0093 16.0701 26.0093 15.1909V12.773C26.0093 11.9075 25.3457 11.1932 24.513 11.1932C23.0297 11.1932 21.8457 10.5887 21.2732 9.53092C20.7007 8.47312 20.7918 7.08561 21.5335 5.73932C21.7286 5.38214 21.7807 4.95627 21.6766 4.54414C21.5725 4.13201 21.3253 3.8023 20.987 3.5825L18.7361 2.22247C18.1766 1.86529 17.4349 2.07135 17.0967 2.67581L16.9535 2.93683C16.2119 4.29686 15.132 5.06617 13.974 5.06617C12.816 5.06617 11.7361 4.29686 10.9944 2.93683L10.8513 2.66207C10.526 2.08509 9.7974 1.87902 9.23792 2.22247L6.98699 3.59624C6.6487 3.8023 6.38848 4.14575 6.28439 4.55788C6.1803 4.97001 6.23234 5.39588 6.42751 5.75306C7.16914 7.09935 7.26022 8.48686 6.68773 9.54466C6.11524 10.6025 4.93123 11.2069 3.44796 11.2069C2.61524 11.2069 1.95167 11.9075 1.95167 12.7868V15.2046C1.95167 16.0701 2.61524 16.7844 3.44796 16.7844C4.93123 16.7844 6.11524 17.3889 6.68773 18.4467C7.26022 19.5045 7.16914 20.892 6.42751 22.2383C6.23234 22.5955 6.1803 23.0213 6.28439 23.4335C6.38848 23.8456 6.63569 24.1753 6.97398 24.3951L9.22491 25.7551C9.49814 25.9337 9.82342 25.975 10.1227 25.8925C10.4349 25.8101 10.6952 25.5903 10.8643 25.3018L11.0074 25.0408C11.7491 23.6945 12.829 22.9114 13.987 22.9114Z" fill="#707070"></path>
-                        </svg>
-                        <span>Settings</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </aside>
-    <!-- Page Main content -->
-    <div class="prifix-page-content">
-
-    </div>
+        </section>
+    </main>
     <!-- Jquery JS-->
     <script src="assets/js/vendor/jquery.min.js"></script>
     <!-- Bootstrap Bundle JS-->
