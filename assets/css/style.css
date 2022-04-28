@@ -60,7 +60,7 @@
   --lh-65: 65px;
   --lh-55: 55px;
   --lh-34: 34px;
-  --lh-27: 27px;
+  --lh-26: 26px;
   --lh-21: 21px;
   /* theme common character spacing */
   --ls-1-95: 1.95px;
@@ -144,46 +144,46 @@ img {
 
 /* padding top */
 
-.pbt150 {
-  padding-top: 150px;
+.pt-150 {
+  padding-top: var(--p-150);
 }
 
 .pt-50 {
-  padding-top: 50px;
+  padding-top: var(--p-50);
 }
 
 .pt-40 {
-  padding-top: 40px;
+  padding-top: var(--p-40);
 }
 
 .pt-30 {
-  padding-top: 30px;
+  padding-top: var(--p-30);
 }
 
 .pt-20 {
-  padding-top: 20px;
+  padding-top: var(--p-20);
 }
 
 /* padding bottom */
 
 .pb-150 {
-  padding-bottom: 150px;
+  padding-bottom: var(--p-150);
 }
 
 .pb-50 {
-  padding-bottom: 50px;
+  padding-bottom: var(--p-50);
 }
 
 .pb-40 {
-  padding-bottom: 40px;
+  padding-bottom: var(--p-40);
 }
 
 .pb-30 {
-  padding-bottom: 30px;
+  padding-bottom: var(--p-30);
 }
 
 .pb-20 {
-  padding-bottom: 20px;
+  padding-bottom: var(--p-20);
 }
 /* common text */
 .text-danger {
@@ -206,7 +206,7 @@ img {
   letter-spacing: var(--ls-0-54);
   border: 1px solid var(--bs-D2D2D2);
   border-radius: 10px;
-  text-transform: capitalize;
+  text-transform: lowercase;
   opacity: 1;
 }
 
@@ -1019,15 +1019,20 @@ img {
 
 .form-check-input[type="checkbox"]:checked,
 .form-check-input[type="checkbox"]:focus-visible {
-  background-color: #f44336;
-  border-color: #f44336;
+  background-color: var(--bs-6ACEB6F9);
+  border-color: var(--bs-6ACEB6F9);
 }
 
 /* theme checkbox with switch style here.. */
 
 .form-check-input[type="checkbox"] {
-  border-color: #f44336;
+  border-color: var(--bs-D2D2D2);
   transition: var(--theme-transition);
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-right: 10px;
 }
 
 .form-switch .form-check-input {
@@ -1325,7 +1330,10 @@ img {
 /* ====================================== */
 
 /* Login page Style Here.. */
-
+.login-area {
+  min-height: calc(100vh - 110px);
+  background: url("../images/shades.svg");
+}
 .login-page-inner {
   column-gap: 94px;
   min-height: calc(100vh - 101px);
@@ -1350,14 +1358,39 @@ img {
   text-align: center;
   margin-left: -30px;
 }
-
+/* Sign up page Style Here.. */
+.signup-area {
+  min-height: calc(100vh - 110px);
+  background: url("../images/shades.svg");
+}
+.signup-page-inner {
+  column-gap: 94px;
+  min-height: calc(100vh - 101px);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.signup-page-inner .section-des {
+  color: var(--bs-343434F9);
+}
 /* contact page Style Here.. */
-
+.contact-us-area {
+  min-height: calc(100vh - 110px);
+  background: url("../images/shades.svg");
+}
 .contact-page-inner {
   column-gap: 94px;
   min-height: calc(100vh - 101px);
 }
-
+/* Email verification page Style Here.. */
+.emvf-area {
+  background: url("../images/shades.svg");
+}
+.emvf-page-inner {
+  min-height: calc(100vh - 110px);
+}
+.emvf-page-inner .btn {
+  padding: 24px 50px;
+}
 /* Landing page Style Here.. */
 
 /* header style here... */
@@ -1409,6 +1442,21 @@ img {
   letter-spacing: var(--ls-0-54);
   color: var(--bs-888888);
   line-height: var(--lh-26);
+}
+.platform-item-txt.text-danger,
+.platform-item-txt.text-success {
+  position: relative;
+}
+.platform-item-txt.text-danger::before,
+.platform-item-txt.text-success::before {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  content: "\f0d8";
+  font-weight: 900;
+  left: -20px;
+}
+.platform-item-txt.text-danger::before {
+  content: "\f0d7";
 }
 .platform-inner {
   padding: 20px;

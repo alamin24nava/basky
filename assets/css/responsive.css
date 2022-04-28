@@ -1,62 +1,100 @@
 /* XX-Large devices (large desktops, less than 1600px) */
- @media (max-width: 1600px) {
-    
+@media (max-width: 1600px) {
+  :root {
+    --p-150: 120px;
+    --p-50: 30px;
+    --p-40: 25px;
+    --p-30: 24px;
+    --p-20: 16px;
+  }
+  .btn {
+    padding: 18px 36px;
+  }
+  .table > :not(caption) > * > * {
+    padding: 24px 29px;
+  }
+  .form-control {
+    min-height: 56px;
+    padding: 16px 24px;
+  }
+  .card-tiers-item-content .btn {
+    padding: 12px 36px;
+  }
 }
 /* X-Large devices (large desktops, less than 1400px) */
- @media (max-width: 1440px) {
-
-    /* section sub title */
-    .section-sub-title{
-        font-size: 18px;
-        line-height: 32px;
-    }
-    /* section description */
-    .section-description{
-        font-size: 14px;
-        line-height: 19px;
-    }
- } 
+@media (max-width: 1440px) {
+  .card-tiers-item-content,
+  .card-tiers-img {
+    padding: 12px 16px;
+  }
+}
 /* Large devices (desktops, less than 1200px) */
- @media (max-width: 1199px) {
-     /* root variabes */
-     :root {
-         /* fonts size with line height */
-        --fs-32: 28px;
-        --fs-24: 22px;
-        --lh-32: 42px;
-        --lh-24: 33px;
-     }
-     .prifix-sidenav-wrap {
-        transform: translateX(-100%);
-    }
-    .prifix-header-template,
-    .prifix-page-content {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-
+@media (max-width: 1199px) {
+  /* root variabes */
+  :root {
+    /* theme common fonts size */
+    --fs-65: 48px;
+    --fs-45: 32px;
+    --fs-26: 22px;
+    --fs-20: 20px;
+    --fs-18: 14px;
+    /* theme common fonts size with line height */
+    --lh-90: 72px;
+    --lh-65: 48px;
+    --lh-55: 55px;
+    --lh-34: 33px;
+    --lh-26: 21px;
+    --lh-21: 21px;
+    /* padding */
+    --p-150: 75px;
+    --p-50: 24px;
+    --p-40: 18px;
+    --p-30: 16px;
+    --p-20: 16px;
+  }
+  .btn {
+    padding: 16px 32px;
+  }
+  .table > :not(caption) > * > * {
+    padding: 16px 18px;
+  }
+  .theme-th-styled {
+    font-size: 16px;
+    line-height: 100%;
+  }
 }
 /* Medium devices (tablets, less than 992px) */
- @media (max-width: 991px) {
-    
- }
+@media (max-width: 991px) {
+  .crypto-trader-items {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .owl-carousel.trusted-customers .owl-item {
+    padding: 24px 16px;
+  }
+  .crypto-trader-item {
+    padding: 32px 16px;
+  }
+  .crypto-trader-item .section-des {
+    max-width: 305px;
+    margin: 0 auto;
+  }
+  .card-tiers-items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20px, 1fr));
+  }
+  .card-tiers-item:nth-child(6) {
+    border-radius: 0 0px 0 0;
+  }
+}
 /* Small devices (landscape phones, less than 768px) */
- @media (max-width: 767px) {
-    :root{
-        /* fonts size with line height */
-        --fs-32: 24px;
-        --fs-24: 20px;
-        --fs-16: 14px;
-        --lh-32: 33px;
-        --lh-24: 30px;
-        --lh-16: 21px;
-    }
-} 
+@media (max-width: 767px) {
+}
 /* X-Small devices (portrait phones, less than 576px) */
- @media (max-width: 575px) { 
-    .prifix-header-template,
-    .prifix-page-content {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
- } 
+@media (max-width: 575px) {
+  .prifix-header-template,
+  .prifix-page-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
