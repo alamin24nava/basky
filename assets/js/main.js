@@ -145,3 +145,19 @@ $(document).ready(function () {
 $(function () {
   $("select").selectpicker();
 });
+
+jQuery(document).on("ready", function () {
+  // Header Sticky
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 120) {
+      $(".navbar-area").addClass("is-sticky");
+    } else {
+      $(".navbar-area").removeClass("is-sticky");
+    }
+  });
+
+  // Mean Menu
+  jQuery(".mean-menu").meanmenu({
+    meanScreenWidth: "991",
+  });
+});
