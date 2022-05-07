@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -9,15 +8,21 @@
     <title>Site Template</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- jQuery flagstrap Plugin  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <!-- Bootstrap v5.0.2 CSS -->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <!-- Theme Main CSS -->
+    <!-- main menu css -->
+    <link rel="stylesheet" href="assets/css/vendor/meanmenu.css">
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/owl.theme.default.min.css">
+    <!-- country Select css -->
+    <link rel="stylesheet" href="assets/css/vendor/countrySelect.css">
+    <!-- Date Picker -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>   
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/demo.css"> 
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-
 <body>
     <!-- Page Main content -->
     <section class="signup-area bg">
@@ -25,30 +30,34 @@
             <div class="login-page-wrap">
                 <!-- company logo -->
                 <div class="pb-30 pt-30">
-                    <img src="assets/images/logo.svg" alt="logo">
+                    <img src="assets/images/header-logo.png" alt="logo">
                 </div>
                 <!-- login form wrapper -->
-                <div class="signup-page-inner d-flex align-items-center flex-column">
-                    <!-- login page short title -->
-                    <h1 class="page-title pb-40 w-100 text-start d-block">Identity verification</h1>
-                    <!-- login form  -->
+                <div class="signup-page-inner d-flex flex-column pt-50">
+                    <!-- identity verificition page short title -->
+                    <h1 class="page-title pb-20 w-100 text-start d-block">Enter verification code</h1>
+                    <p class="section-des text-start w-100 pb-30">Please enter 5 digit code that we sent to your number +880********89</p>
+                    <!-- Identity verification form  -->
                     <form class="row">
-                        <div class="col-12 pb-20">
-                            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                        <div class="col-md-12 pb-40">
+                            <label class="visually-hidden" for="autoSizingInputGroup">country</label>
                             <div class="input-group">
-                                <div class="input-group-text">+880</div>
-                                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                                <div class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                </div>
+                                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="verification code">
                             </div>
                         </div>
-                        <div class="col-md-12 pb-20">
-                            <select class="selectpicker countrypicker" data-countries="AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE"></select>
+                        <div class="col-12 d-flex flex-column">
+                            <div class="pb-20 ">
+                                <a href="#" class="p-0 btn btn-link">Resend code</a>
+                            </div>
+                            <div class="pb-20">
+                                <a href="#" class="p-0 btn btn-link">Use another phone number</a>
+                            </div>
                         </div>
-
-                        <div class="col-12 pb-30">
-                            <button type="submit" class="btn btn-primary w-100 d-block">Create Account</button>
-                        </div>
-                        <div class="col-12 d-flex justify-content-center">
-                            <p class="section-des pb-30">Already a Baskypi user? <a href="" class="p-0 btn btn-link">Login</a></p>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary w-100 d-block">Send Code</button>
                         </div>
                     </form>
                 </div>
@@ -56,13 +65,20 @@
         </div>
     </section>
     <!-- Jquery JS-->
-    <script src="assets/js/vendor/jquery.min.js"></script>
-    <!-- Bootstrap Bundle JS-->
-    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <!-- jQuery flagstrap Plugin  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-    <!-- Theme Main JS-->
-    <script src="assets/js/main.js"></script>
+   <script src="assets/js/vendor/jquery.min.js"></script>
+   <!-- Bootstrap Bundle JS-->
+   <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/vendor/jquery.meanmenu.js"></script>
+   <!-- owl carousel js -->
+   <script src="assets/js/vendor/owl.carousel.min.js"></script>
+   <!-- countrySelect js -->
+   <script src="assets/js/vendor/countrySelect.js"></script>
+   <!-- Theme Main JS-->
+   <script src="assets/js/main.js"></script>
+   <!-- Font Awesome  -->
+   <script src="https://kit.fontawesome.com/a88d68a587.js"></script>
+   <!-- date picker -->
+   <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
 </body>
 
 </html>

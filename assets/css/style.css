@@ -1078,6 +1078,82 @@ img {
   display: none;
 }
 
+/* country selector html with icon bootstrap 5 */
+.country-select.inside{
+  width: 100%;
+}
+.country-select.inside input, .country-select.inside input[type=text] {
+  padding-right: 16px;
+  padding-left: 100px;
+  margin-left: 0;
+  min-height: 70px;
+  font-family: var(--Roboto);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--fs-18);
+  line-height: var(--lh-26);
+  letter-spacing: var(--ls-0-54);
+  color: var(--bs-888888);
+  border-radius: 10px;
+  width: 100%;
+  background-color: transparent;
+}
+.country-select.inside .flag-dropdown {
+  right: auto;
+  left: 20px;
+border-right: 1px solid var(--bs-D2D2D2);  /* padding-right: 19px; */
+}
+.country-select .selected-flag{
+  padding: 0;
+}
+.country-select.inside .selected-flag {
+  width: 62px;
+}
+.country-select.inside .flag-dropdown:hover .selected-flag {
+  background-color: transparent;
+}
+.country-select .selected-flag .arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: 0;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
+}
+.country-select .country-list{
+  margin-left: -20px;
+}
+.country-name{
+  font-family: var(--Roboto);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--fs-18) !important;
+  line-height: var(--lh-26);
+  letter-spacing: var(--ls-0-54);
+  color: var(--bs-888888);
+
+}
+.input-group-text{
+  background: transparent;
+  padding: 0 27px 0 20px;
+  border-radius: 10px;
+}
+.country-select .selected-flag .arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #555;
+  margin-top: -2px;
+}
+.country-select .selected-flag .arrow.up {
+  border-top: none;
+  border-bottom: 5px solid #555;
+}
+.country-select .country-list {
+  z-index: 9;
+}
 /* defult css end */
 
 /* Main theme style start here... */
@@ -1641,7 +1717,10 @@ img {
   color: #696997;
   text-transform: capitalize;
 }
-
+.navbar-light .navbar-brand {
+  color: rgba(0,0,0,.9);
+  /* max-width: 137px; */
+}
 .plamb-nav
   .navbar
   .navbar-nav
@@ -1909,8 +1988,9 @@ img {
 }
 
 .plamb-nav .navbar .other-option {
-  margin-left: 0;
-  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .plamb-nav .navbar .other-option .default-btn.seo-btn {
@@ -2076,6 +2156,10 @@ img {
   .plamb-nav {
     display: none;
   }
+}
+.section-des-other{
+  border-right: 1px solid var(--bs-D2D2D2) !important;
+  padding-right: 20px;
 }
 
 /* --Navbar Area End-- */
@@ -2370,6 +2454,9 @@ img {
   /* opacity: 0.55; */
   padding: 16px 30px 0 30px;
 }
+.start-earning-area.pb-150{
+  padding-bottom: 260px;
+}
 /* theme footer style here.. */
 .theme-footer {
   background: transparent
@@ -2383,11 +2470,15 @@ img {
     0% 0% no-repeat padding-box;
 }
 .newsletter-wrap {
-  background: transparent linear-gradient(90deg, #e6db37 0%, #4fbec7 100%) 0% 0%
-    no-repeat padding-box;
-  box-shadow: 0px 4px 30px #00000033;
   padding: 68px 114px;
-  border-radius: 126px;
+  background: url("../images/news-bg.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  margin-bottom: 160px;
+  top: -103px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .newsletter-wrap .section-des {
   color: var(--bs-FFFFFFD6);
@@ -2396,8 +2487,8 @@ img {
   background: var(--bs-E6DB37);
   border: 1px solid var(--bs-E6DB37);
 }
-.theme-footer {
-  padding-top: 160px;
+.footer-inner-contant{
+  padding-top: 170px;
 }
 .footer-left .section-des {
   color: var(--bs-FFFFFFD6);
@@ -2454,4 +2545,56 @@ img {
 }
 .copyright-wrap {
   padding: 40px 0;
+}
+
+/* personal details page style here... */
+.date-picker-cal{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  z-index: 9;
+}
+#file-chosen2,
+#file-chosen{
+  font-size: var(--fs-18);
+  font-family: var(--Roboto);
+  font-weight: 400;
+  line-height: var(--lh-18);
+  color: var(--bs-D2D2D2);
+  letter-spacing: var(--ls-0-54);
+}
+#file-chosen2 {
+  border: 1px solid #6ACEB6F9;
+  padding: 8px;
+  border-radius: 8px;
+}
+ul#fileList {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#fileList li {
+  border: 1px solid #6ecfb8;
+  padding: 8px;
+  border-radius: 8px;
+  position: relative;
+}
+.multi-upload-wrap {
+  padding: 0px 32px;
+  /* height: 77px; */
+}
+.remove-list {
+  position: absolute;
+  right: -7px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  top: -7px;
+  border: 1px solid #6ecfb8;
+  line-height: 0;
 }

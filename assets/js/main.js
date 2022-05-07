@@ -161,3 +161,67 @@ jQuery(document).on("ready", function () {
     meanScreenWidth: "991",
   });
 });
+
+// Select Country js
+$("#country_selector").countrySelect({
+  // defaultCountry: "jp",
+  // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+  // responsiveDropdown: true,
+  preferredCountries: ['ca', 'gb', 'us']
+});
+
+/* Bootstrap 5 JS included */
+/* vanillajs-datepicker 1.1.4 JS included */
+
+const getDatePickerTitle = elem => {
+// From the label or the aria-label
+const label = elem.nextElementSibling;
+let titleText = '';
+if (label && label.tagName === 'LABEL') {
+titleText = label.textContent;
+} else {
+titleText = elem.getAttribute('aria-label') || '';
+}
+return titleText;
+}
+
+const elems = document.querySelectorAll('.datepicker_input');
+for (const elem of elems) {
+const datepicker = new Datepicker(elem, {
+'format': 'dd/mm/yyyy', // UK format
+title: getDatePickerTitle(elem)
+});
+}  
+
+
+// file upload
+const actualBtn = document.getElementById('actual-btn');
+
+const fileChosen = document.getElementById('file-chosen');
+
+actualBtn.addEventListener('change', function(){
+  fileChosen.textContent = this.files[0].name
+})
+
+
+
+// file upload
+const actualBtn2 = document.getElementById('actual-btn2');
+
+const fileChosen2 = document.getElementById('file-chosen2');
+
+actualBtn2.addEventListener('change', function(){
+  fileChosen2.textContent = this.files[0].name
+})
+
+
+
+updateList = function() {
+  var input = document.getElementById('file');
+  var output = document.getElementById('fileList');
+  var children = "";
+  for (var i = 0; i < input.files.length; ++i) {
+      children +=  '<li>'+ input.files.item(i).name + '<span class="remove-list" onclick="return this.parentNode.remove()">X</span>' + '</li>'
+  }
+  output.innerHTML = children;
+}

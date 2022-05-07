@@ -27,38 +27,42 @@
     <!-- Page Main content -->
     <section class="signup-area bg">
         <div class="container">
-            <div class="login-page-wrap ">
+            <div class="login-page-wrap">
                 <!-- company logo -->
                 <div class="pb-30 pt-30">
                     <img src="assets/images/header-logo.png" alt="logo">
                 </div>
                 <!-- login form wrapper -->
                 <div class="signup-page-inner d-flex align-items-center flex-column pt-50">
-                    <!-- login page short title -->
-                    <h1 class="page-title pb-40 w-100 text-start d-block">Create your account</h1>
-                    <!-- login form  -->
+                    <!-- identity verificition page short title -->
+                    <h1 class="page-title pb-40 w-100 text-start d-block">Identity verification</h1>
+                    <!-- Identity verification form  -->
                     <form class="row">
-                        <div class="col-md-6 pb-20">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6 pb-30">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
                         <div class="col-md-12 pb-20">
-                            <input type="email" class="form-control" placeholder="Your Email">
+                            <div class="form-item">
+                                <input id="country_selector" type="text">
+                                <label for="country_selector" style="display:none;">Select a country here...</label>
+                            </div>
+                            <div class="form-item" style="display:none;">
+                                <input type="text" id="country_selector_code" name="country_selector_code" data-countrycodeinput="1" readonly="readonly" placeholder="Selected country code will appear here" />
+                                <label for="country_selector_code">...and the selected country code will be updated here</label>
+                            </div>
                         </div>
-                        <div class="col-md-12 pb-30">
-                            <input type="password" class="form-control" placeholder="password">
+                        <div class="col-md-12 pb-40">
+                            <label class="visually-hidden" for="autoSizingInputGroup">Phone</label>
+                            <div class="input-group">
+                                <div class="input-group-text">+880</div>
+                                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Phone number">
+                            </div>
                         </div>
+                        
                         <div class="col-12">
-                            <div class="form-check pb-30">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label section-des" for="gridCheck">I certify that I am 18 years of age or older, and agree to the <a href="" class="p-0 btn btn-link">User Agreement</a> and <a href="" class="p-0 btn btn-link">Privacy Policy</a>.
-                                </label>
+                            <div class="pb-40">
+                                <p class="section-des">Security is critical at BaskyPi. To help keep your account safe, we'll text you a verification code when you sign in on a new device.</p>
                             </div>
                         </div>
                         <div class="col-12 pb-30">
-                            <button type="submit" class="btn btn-primary w-100 d-block">Create Account</button>
+                            <button type="submit" class="btn btn-primary w-100 d-block">Send Code</button>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
                             <p class="section-des pb-30">Already a Baskypi user? <a href="" class="p-0 btn btn-link">Login</a></p>
@@ -68,7 +72,7 @@
             </div>
         </div>
     </section>
-   <!-- Jquery JS-->
+    <!-- Jquery JS-->
    <script src="assets/js/vendor/jquery.min.js"></script>
    <!-- Bootstrap Bundle JS-->
    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
