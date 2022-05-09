@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/vendor/countrySelect.css">
     <!-- Date Picker -->
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+    <!-- Language Picker css -->
+    <link rel="stylesheet" href="assets/css/language-picker.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -70,8 +72,30 @@
                             </ul>
                         </div>
                         <div class="other-option">
-                            <div class="section-des section-des-other">sdefsd</div>
-                            <div class="section-des section-des-other">usd</div>
+                            <div class="section-des section-des-other">
+                                <div class="js">
+                                    <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
+                                        <form action="" class="language-picker__form">
+                                            <label for="language-picker-select">Select your language</label>
+                                            <select name="language-picker-select" id="language-picker-select">
+                                                <option lang="de" value="deutsch">Deutsch</option>
+                                                <option lang="en" value="english" selected>English</option>
+                                                <option lang="fr" value="francais">Français</option>
+                                                <option lang="it" value="italiano">Italiano</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-des section-des-other usd">
+                                <select class="theme-select-input">
+                                    <!-- <option value="hide">-- Year --</option> -->
+                                    <option value="usd">USD</option>
+                                    <option value="usd">TAKA</option>
+                                    <option value="usd">USD</option>
+                                    <option value="usd">TAKA</option>
+                                </select>
+                            </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
                                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                             </svg>
@@ -102,7 +126,7 @@
         <!-- Ranking Crypto Currency Area -->
         <section class="ranking-crypto-currency-area pt-150 pb-150">
             <div class="container">
-                <div class="d-flex align-items-end justify-content-between pb-40">
+                <div class="d-md-flex d-block align-items-end justify-content-between pb-40">
                     <h2 class="section-title">Ranking Crypto Currency</h2>
                     <a href="#" class="btn btn-link p-0">View More Markets <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
                 </div>
@@ -199,10 +223,10 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-6">
-                        <div class="trusted-platform-left d-sm-flex">
-                            <div class="platform-item w-100 mb-3 mb-sm-0">
-                                <div class="platform-item-top d-flex align-items-center pt-20 pb-20">
-                                    <img class="platform-item-img" src="assets/images/coindx.png" alt="Hero Image">
+                        <div class="trusted-platform-left d-md-flex">
+                            <div class="platform-item w-100 mb-md-0 mb-4">
+                                <div class="platform-item-top d-flex align-items-center pt-20 pb-20 ps-3">
+                                    <img class="platform-item-img" src="assets/images/crypto-3.png" alt="Hero Image">
                                     <h3 class="section-sub-title ps-2">Unocoin</h3>
                                 </div>
                                 <div class="platform-inner">
@@ -221,8 +245,8 @@
                                 </div>
                             </div>
                             <div class="platform-item w-100">
-                                <div class="platform-item-top d-flex align-items-center pt-20 pb-20">
-                                    <img class="platform-item-img" src="assets/images/coindx.png" alt="Hero Image">
+                                <div class="platform-item-top d-flex align-items-center pt-20 pb-20 ps-3">
+                                    <img class="platform-item-img" src="assets/images/crypto-2.png" alt="Hero Image">
                                     <h3 class="section-sub-title ps-2">Coin Dx</h3>
                                 </div>
                                 <div class="platform-inner">
@@ -266,7 +290,7 @@
                     <h2 class="section-title pb-40">Become a crypto trader in second</h2>
                     <p class="section-des pb-50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
                 </div>
-                <div class="crypto-trader-items d-flex align-items-center justify-content-between">
+                <div class="crypto-trader-items d-flex align-items-center justify-content-md-between justify-content-center">
                     <div class="crypto-trader-item">
                         <img src="assets/images/crypto-trader-1.png" alt="crypto-trader" class="pb-30">
                         <h3 class="section-sub-title pb-30">Buy & Sell Crypto</h3>
@@ -295,168 +319,134 @@
                     <h2 class="section-title pb-40">Card tiers</h2>
                     <p class="section-des pb-50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
                 </div>
-                <div class="card-tiers-items">
-                    <div class="card-tiers-item border-end-0 border-bottom-0">
+                <div class="card-tiers-items gap-3">
+                    <div class="card-tiers-item">
                         <img class="card-tiers-img" src="assets/images/card-1.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
                         </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
                     </div>
-                    <div class="card-tiers-item border-end-0 border-bottom-0">
+                    <div class="card-tiers-item">
                         <img class="card-tiers-img" src="assets/images/card-2.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
                         </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
                     </div>
-                    <div class="card-tiers-item border-end-lg-0 border-end border-bottom-0">
+                    <div class="card-tiers-item">
                         <img class="card-tiers-img" src="assets/images/card-3.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
                         </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
                     </div>
-                    <div class="card-tiers-item border-end-0 border-bottom-0">
+                    <div class="card-tiers-item">
                         <img class="card-tiers-img" src="assets/images/card-4.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
                         </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
                     </div>
-                    <div class="card-tiers-item border-end-0 border-bottom-0">
+                    <div class="card-tiers-item">
                         <img class="card-tiers-img" src="assets/images/card-5.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
                         </div>
-                    </div>
-                    <div class="card-tiers-item border-bottom-0 border-end border-end-lg-0">
-                        <img class="card-tiers-img" src="assets/images/card-6.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-end-0 border-bottom-0">
-                        <img class="card-tiers-img" src="assets/images/card-1.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-end-0 border-bottom-0">
-                        <img class="card-tiers-img" src="assets/images/card-2.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-bottom-0 border-end-lg-0 border-end">
-                        <img class="card-tiers-img" src="assets/images/card-3.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-end-0 border-bottom-0">
-                        <img class="card-tiers-img" src="assets/images/card-4.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-end-0 border-bottom-0">
-                        <img class="card-tiers-img" src="assets/images/card-5.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-bottom-0">
-                        <img class="card-tiers-img" src="assets/images/card-6.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-end-lg-0 border-end">
-                        <img class="card-tiers-img" src="assets/images/card-1.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-end-0">
-                        <img class="card-tiers-img" src="assets/images/card-2.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-end-0">
-                        <img class="card-tiers-img" src="assets/images/card-3.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-end-0">
-                        <img class="card-tiers-img" src="assets/images/card-4.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
-                    </div>
-                    <div class="card-tiers-item border-end-0">
-                        <img class="card-tiers-img" src="assets/images/card-5.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
-                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
                     </div>
                     <div class="card-tiers-item">
                         <img class="card-tiers-img" src="assets/images/card-6.png" alt="">
-                        <div class="card-tiers-item-content">
-                            <p class="card-tiers-name pb-2">Name: <span>Crypto</span></p>
-                            <p class="card-tiers-name pb-2">Value: <span>10</span></p>
-                            <img class="pb-40" src="assets/images/strong-currency.png" alt="strong-currency">
-                            <button class="btn btn-outline-primary d-block mx-auto">buy</button>
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
                         </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
+                    </div>
+                    <div class="card-tiers-item">
+                        <img class="card-tiers-img" src="assets/images/card-1.png" alt="">
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
+                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
+                    </div>
+                    <div class="card-tiers-item">
+                        <img class="card-tiers-img" src="assets/images/card-2.png" alt="">
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
+                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
+                    </div>
+                    <div class="card-tiers-item">
+                        <img class="card-tiers-img" src="assets/images/card-3.png" alt="">
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
+                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
+                    </div>
+                    <div class="card-tiers-item">
+                        <img class="card-tiers-img" src="assets/images/card-4.png" alt="">
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
+                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
+                    </div>
+                    <div class="card-tiers-item">
+                        <img class="card-tiers-img" src="assets/images/card-5.png" alt="">
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
+                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
+                    </div>
+                    <div class="card-tiers-item">
+                        <img class="card-tiers-img" src="assets/images/card-6.png" alt="">
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
+                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
+                    </div>
+                    <div class="card-tiers-item">
+                        <img class="card-tiers-img" src="assets/images/card-1.png" alt="">
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
+                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
+                    </div>
+                    <div class="card-tiers-item">
+                        <img class="card-tiers-img" src="assets/images/card-2.png" alt="">
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
+                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
+                    </div>
+                    <div class="card-tiers-item">
+                        <img class="card-tiers-img" src="assets/images/card-3.png" alt="">
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
+                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
+                    </div>
+                    <div class="card-tiers-item">
+                        <img class="card-tiers-img" src="assets/images/card-4.png" alt="">
+                        <div class="card-tiers-item-content d-flex align-items-center">
+                            <p class="card-tiers-name">Crypto <sub> / 10</sub></p>
+                        </div>
+                        <img src="assets/images/strong-currency.png" alt="strong-currency">
+                        <button class="btn btn-outline-primary">buy</button>
                     </div>
                 </div>
             </div>
@@ -469,7 +459,7 @@
                         <img src="assets/images/security.png" alt="security">
                     </div>
                     <div class="col-md-6">
-                        <div class="security-founds-right">
+                        <div class="security-founds-right pt-md-0 pt-5">
                             <h2 class="section-title pb-40">Security of your founds</h2>
                             <p class="section-des pb-40">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                             <div class="securuty-items">
@@ -525,10 +515,10 @@
                             <img src="assets/images/qu.png" alt="Qu" class="pb-2 ms-auto">
                         </div>
                         <div class="customer-info-wrap d-flex align-items-center gap-4 pb-50">
-                            <img src="assets/images/crypto-1.png" alt="Qu">
+                            <img src="assets/images/profile.jpg" alt="Qu" class="customar-profile-img">
                             <div class="customer-info">
                                 <h4 class="section-sub-title pb-2">Abdur Raquib</h4>
-                                <p class="section-des">Khulna, Bangladesh</p>
+                                <p class="section-des">Dhaka, Bangladesh</p>
                             </div>
                         </div>
                         <p class="section-des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita.</p>
@@ -538,10 +528,10 @@
                             <img src="assets/images/qu.png" alt="Qu" class="pb-2 ms-auto">
                         </div>
                         <div class="customer-info-wrap d-flex align-items-center gap-4 pb-50">
-                            <img src="assets/images/crypto-1.png" alt="Qu">
+                            <img src="assets/images/profile-2.jpg" alt="Qu" class="customar-profile-img">
                             <div class="customer-info">
                                 <h4 class="section-sub-title pb-2">Kristen Stwert</h4>
-                                <p class="section-des">Khulna, Bangladesh</p>
+                                <p class="section-des">London, UK</p>
                             </div>
                         </div>
                         <p class="section-des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita.</p>
@@ -551,7 +541,7 @@
                             <img src="assets/images/qu.png" alt="Qu" class="pb-2 ms-auto">
                         </div>
                         <div class="customer-info-wrap d-flex align-items-center gap-4 pb-50">
-                            <img src="assets/images/crypto-1.png" alt="Qu">
+                            <img src="assets/images/alamin.jpg" alt="Qu" class="customar-profile-img">
                             <div class="customer-info">
                                 <h4 class="section-sub-title pb-2">M A AMIN</h4>
                                 <p class="section-des">Khulna, Bangladesh</p>
@@ -567,15 +557,15 @@
             <div class="container">
                 <div class="start-earning-inner">
                     <div class="row align-items-center">
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-7">
                             <div class="start-earning-left">
                                 <h2 class="section-title pb-40">Start earning with cryptocurrency today!</h2>
                                 <p class="section-des pb-40">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
                                 <button class="btn btn-primary">Get Started Trail</button>
                             </div>
                         </div>
-                        <div class="col-md-6 text-center">
-                            <img src="assets/images/earning-profile.png" alt="earning profile">
+                        <div class="col-lg-6 col-md-5 text-center  ">
+                            <img src="assets/images/earning-profile.png" alt="earning profile" class="d-md-block d-none">
                         </div>
                     </div>
                 </div>
@@ -584,7 +574,7 @@
     </main>
     <footer class="theme-footer">
         <div class="container position-relative">
-            <div class="newsletter-wrap d-flex align-items-center justify-content-between w-100">
+            <div class="newsletter-wrap d-none d-lg-flex align-items-center justify-content-between w-100">
                 <div>
                     <h3 class="pb-20 section-sub-title fw-normal text-white">Get Started Today With Crypto Currency</h3>
                     <p class="section-des fw-normal">We Are Worlds Largest Online Trading Site Holder</p>
@@ -594,14 +584,14 @@
                 </div>
             </div>
             <div class="row pb-40 footer-inner-contant">
-                <div class="col-md-5">
+                <div class="col-lg-5 col-md-12">
                     <div class="footer-left">
                         <img src="assets/images/logo-white.png" alt="logo" class="pb-30">
                         <p class="section-des">We Are World's Largest Online Aggregator Of Crypto Bureaus. Whether You Are Looking For A Job Or A Buis Or A Patient Caretaker In Anywhere, Thane, Navi Mumbai, Pune, Bangalore, Surat, You Will Find The Best Quality And Experienced Staff Here.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="footer-middle">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-middle pt-lg-0 pt-5">
                         <h3 class="section-sub-title text-white fw-normal">ABOUT CRYPTO</h3>
                         <ul class="nav flex-column footer-nav">
                             <li class="nav-item">
@@ -625,8 +615,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="footer-right">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-right pt-lg-0 pt-5">
                         <h3 class="section-sub-title text-white fw-normal">NEWSLETTER</h3>
                         <div class="theme-search-box-wrap">
                             <span class="theme-search-box-icon">
@@ -678,8 +668,8 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="social-media-inner">
-                            <h3 class="section-sub-title text-white fw-normal pb-30">Contact with us</h3>
+                        <div class="social-media-inner pt-md-0 pt-5">
+                            <h3 class="section-sub-title text-white fw-normal pb-30">Payment Methods</h3>
                             <img src="assets/images/cards.png" alt="cards">
                         </div>
                     </div>
@@ -704,6 +694,8 @@
     <script src="https://kit.fontawesome.com/a88d68a587.js"></script>
     <!-- date picker -->
     <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+    <!-- Language Picker js -->
+    <script src="assets/js/language-picker.js"></script>
     <!-- Theme Main JS-->
     <script src="assets/js/main.js"></script>
 </body>

@@ -81,6 +81,16 @@ a.meanmenu-reveal {
   color: var(--bs-343434F9);
   border-top: 1px solid var(--bs-D2D2D2);
   text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--heading-color);
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+  letter-spacing: var(--ls-0-54);
+  color: var(--bs-343434F9);
+  text-transform: capitalize;
+  opacity: 1;
 }
 .mean-container .mean-nav ul li a.active {
   color: #000000;
