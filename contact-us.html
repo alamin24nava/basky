@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Site Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap v5.0.2 CSS -->
-        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-        <!-- main menu css -->
-        <link rel="stylesheet" href="assets/css/vendor/meanmenu.css">
-        <!-- owl carousel css -->
-        <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/owl.theme.default.min.css">
-        <!-- country Select css -->
-        <link rel="stylesheet" href="assets/css/vendor/countrySelect.css">
-        <!-- Date Picker -->
-        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>   
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/demo.css"> 
-        <link rel="stylesheet" href="assets/css/responsive.css">
-    </head>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Contact Us</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap v5.0.2 CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- main menu css -->
+    <link rel="stylesheet" href="assets/css/vendor/meanmenu.css">
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/owl.theme.default.min.css">
+    <!-- country Select css -->
+    <link rel="stylesheet" href="assets/css/vendor/countrySelect.css">
+    <!-- Date Picker -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+    <!-- Custom style  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive style -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
 <body>
     <!-- baskypi Header Area -->
     <header class="theme-header">
         <!-- Navber Area Start -->
         <div class="navbar-area">
-            <div class="plamb-responsive-nav">
+            <div class="theme-responsive-nav">
                 <div class="container">
-                    <div class="plamb-responsive-menu">
+                    <div class="theme-responsive-menu">
                         <div class="logo">
                             <a href="index.html">
                                 <img src="assets/images/header-logo.png" class="white-logo" alt="logo">
@@ -41,7 +44,7 @@
                 </div>
             </div>
 
-            <div class="plamb-nav">
+            <div class="theme-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index.html">
@@ -49,7 +52,7 @@
                             <img src="assets/images/header-logo.png" class="black-logo" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav d-flex align-items-center gap-6">
+                            <ul class="navbar-nav align-items-center column-gap-6">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link active">Home</a>
                                 </li>
@@ -65,12 +68,36 @@
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">Exchange</a>
                                 </li>
-                            </ul>                           
+                            </ul>
                         </div>
                         <div class="other-option">
-                            <div class="section-des section-des-other">sdefsd</div>
-                            <div class="section-des section-des-other">usd</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>                              
+                            <div class="section-des section-des-other">
+                                <div class="js">
+                                    <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
+                                        <form action="" class="language-picker__form">
+                                            <label for="language-picker-select">Select your language</label>
+                                            <select name="language-picker-select" id="language-picker-select">
+                                                <option lang="de" value="deutsch">Deutsch</option>
+                                                <option lang="en" value="english" selected>English</option>
+                                                <option lang="fr" value="francais">Français</option>
+                                                <option lang="it" value="italiano">Italiano</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-des section-des-other usd">
+                                <select class="theme-select-input">
+                                    <!-- <option value="hide">-- Year --</option> -->
+                                    <option value="usd">USD</option>
+                                    <option value="eur">EUR</option>
+                                    <option value="cad">CAD</option>
+                                    <option value="aud">AUD</option>
+                                </select>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                            </svg>
                         </div>
                     </nav>
                 </div>
@@ -80,13 +107,13 @@
     <!-- Page Main content -->
     <section class="contact-us-area bg">
         <div class="container">
-            <div class="contact-page-wrap">
+            <div class="contact-page-wrap pt-md-0 pt-5">
                 <!-- contact form wrapper -->
-                <div class="contact-page-inner d-flex align-items-center">
-                    <div class="contact-left w-50">
+                <div class="contact-page-inner d-md-flex align-items-center">
+                    <div class="contact-left w-md-50 d-md-block d-none">
                         <img src="assets/images/illust.png" alt="login img">
                     </div>
-                    <div class="contact-right w-50">
+                    <div class="contact-right w-md-50">
                         <!-- contact page short title -->
                         <h1 class="page-title pb-50">Say Hello!</h1>
                         <!-- contact form  -->
@@ -109,21 +136,24 @@
             </div>
         </div>
     </section>
-   <!-- Jquery JS-->
-   <script src="assets/js/vendor/jquery.min.js"></script>
-   <!-- Bootstrap Bundle JS-->
-   <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-   <script src="assets/js/vendor/jquery.meanmenu.js"></script>
-   <!-- owl carousel js -->
-   <script src="assets/js/vendor/owl.carousel.min.js"></script>
-   <!-- countrySelect js -->
-   <script src="assets/js/vendor/countrySelect.js"></script>
-   <!-- Theme Main JS-->
-   <script src="assets/js/main.js"></script>
-   <!-- Font Awesome  -->
-   <script src="https://kit.fontawesome.com/a88d68a587.js"></script>
-   <!-- date picker -->
-   <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+    <!-- Jquery JS-->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <!-- Bootstrap Bundle JS-->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <!-- main menu js -->
+    <script src="assets/js/vendor/jquery.meanmenu.js"></script>
+    <!-- owl carousel js -->
+    <script src="assets/js/vendor/owl.carousel.min.js"></script>
+    <!-- countrySelect js -->
+    <script src="assets/js/vendor/countrySelect.js"></script>
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/a88d68a587.js"></script>
+    <!-- date picker -->
+    <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+    <!-- Language Picker js -->
+    <script src="assets/js/language-picker.js"></script>
+    <!-- Theme Main JS-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

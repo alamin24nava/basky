@@ -86,29 +86,29 @@
   // });
 
   // add more field
-  $(".add-more-field").click(function () {
-    $(".add-another-field-wrap").clone().appendTo(".dynamic-another-field");
-    $(".dynamic-another-field .add-another-field-wrap").addClass(
-      "single remove"
-    );
-    $(".single .add-more-field").remove();
-    $(".single").append(
-      '<a href="#" class="remove-field btn-remove-customer">Remove Item</a>'
-    );
-    $(".dynamic-another-field > .single").attr("class", "remove");
+  // $(".add-more-field").click(function () {
+  //   $(".add-another-field-wrap").clone().appendTo(".dynamic-another-field");
+  //   $(".dynamic-another-field .add-another-field-wrap").addClass(
+  //     "single remove"
+  //   );
+  //   $(".single .add-more-field").remove();
+  //   $(".single").append(
+  //     '<a href="#" class="remove-field btn-remove-customer">Remove Item</a>'
+  //   );
+  //   $(".dynamic-another-field > .single").attr("class", "remove");
 
-    $(".dynamic-another-field input").each(function () {
-      var count = 0;
-      var fieldname = $(this).attr("name");
-      $(this).attr("name", fieldname + count);
-      count++;
-    });
-  });
+  //   $(".dynamic-another-field input").each(function () {
+  //     var count = 0;
+  //     var fieldname = $(this).attr("name");
+  //     $(this).attr("name", fieldname + count);
+  //     count++;
+  //   });
+  // });
 
-  $(document).on("click", ".remove-field", function (e) {
-    $(this).parent(".remove").remove();
-    e.preventDefault();
-  });
+  // $(document).on("click", ".remove-field", function (e) {
+  //   $(this).parent(".remove").remove();
+  //   e.preventDefault();
+  // });
 
   // owlCarousel
 
@@ -162,7 +162,7 @@
     // defaultCountry: "jp",
     // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
     // responsiveDropdown: true,
-    preferredCountries: ["ca", "gb", "us"],
+    preferredCountries: ["bd", "gb", "us"],
   });
 
   /* Bootstrap 5 JS included */
@@ -188,7 +188,7 @@
     });
   }
 
-  // file upload
+  // single file upload
   const actualBtn = document.getElementById("actual-btn");
 
   const fileChosen = document.getElementById("file-chosen");
@@ -196,27 +196,4 @@
   actualBtn.addEventListener("change", function () {
     fileChosen.textContent = this.files[0].name;
   });
-
-  // file upload
-  const actualBtn2 = document.getElementById("actual-btn2");
-
-  const fileChosen2 = document.getElementById("file-chosen2");
-
-  actualBtn2.addEventListener("change", function () {
-    fileChosen2.textContent = this.files[0].name;
-  });
-
-  updateList = function () {
-    var input = document.getElementById("file");
-    var output = document.getElementById("fileList");
-    var children = "";
-    for (var i = 0; i < input.files.length; ++i) {
-      children +=
-        "<li>" +
-        input.files.item(i).name +
-        '<span class="remove-list" onclick="return this.parentNode.remove()">X</span>' +
-        "</li>";
-    }
-    output.innerHTML = children;
-  };
 })(jQuery);

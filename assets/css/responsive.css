@@ -167,6 +167,9 @@
   .card-tiers-item img {
     max-width: 17%;
   }
+  .emvf-page-inner .btn {
+    padding: 12px 32px;
+  }
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {

@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Site Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap v5.0.2 CSS -->
-        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-        <!-- main menu css -->
-        <link rel="stylesheet" href="assets/css/vendor/meanmenu.css">
-        <!-- owl carousel css -->
-        <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/owl.theme.default.min.css">
-        <!-- country Select css -->
-        <link rel="stylesheet" href="assets/css/vendor/countrySelect.css">
-        <!-- Date Picker -->
-        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>   
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/demo.css"> 
-        <link rel="stylesheet" href="assets/css/responsive.css">
-    </head>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Personal Details</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap v5.0.2 CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- main menu css -->
+    <link rel="stylesheet" href="assets/css/vendor/meanmenu.css">
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/owl.theme.default.min.css">
+    <!-- country Select css -->
+    <link rel="stylesheet" href="assets/css/vendor/countrySelect.css">
+    <!-- Date Picker -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+    <!-- Custom style  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive style -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
 <body>
     <!-- Page Main content -->
     <section class="signup-area bg">
@@ -37,7 +40,7 @@
                     <!-- login page short title -->
                     <h1 class="page-title pb-40 w-100 text-start d-block">Personal Details</h1>
                     <!-- login form  -->
-                    <form class="row gx-3" enctype="multipart/form-data">
+                    <form class="row gx-3" enctype="multipart/form-data" class="file-uploader">
                         <div class="col-md-6 pb-20">
                             <input type="text" class="form-control" placeholder="Abdur">
                         </div>
@@ -47,10 +50,15 @@
                         <div class="col-md-12 pb-30">
                             <div class="position-relative">
                                 <input type="text" class="datepicker_input form-control" placeholder="Date input 3 placeholder" required aria-label="Date input 3 (using aria-label)">
-                                
+
                                 <!-- <i class="fa-regular fa-calendar-days input-group-text"></i> -->
-                                <svg class="date-picker-cal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d2d2d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                              </div>
+                                <svg class="date-picker-cal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d2d2d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                            </div>
                         </div>
                         <div class="col-md-6 pb-20">
                             <input type="text" class="form-control" placeholder="Street Address">
@@ -64,7 +72,7 @@
                         <div class="col-md-6 pb-30">
                             <input type="text" class="form-control" placeholder="State">
                         </div>
-                        
+
                         <div class="col-md-6 pb-20">
                             <input type="text" class="form-control" placeholder="Post code">
                         </div>
@@ -78,52 +86,252 @@
                                 <label for="country_selector_code">...and the selected country code will be updated here</label>
                             </div>
                         </div>
-                        
+                        <!-- single file upload -->
                         <div class="col-md-6 pb-30">
                             <div class="form-control d-flex align-items-center justify-content-between" for="actual-btn">
-                                <input type="file" id="actual-btn" hidden/>
-                                <span id="file-chosen">Upload profile picture</span>                        
-                                <label for="actual-btn" class="section-des"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                                <span>Upload</span></label>
+                                <input type="file" id="actual-btn" hidden />
+                                <span id="file-chosen">Upload profile picture</span>
+                                <label for="actual-btn" class="section-des cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                        <line x1="12" y1="5" x2="12" y2="19" />
+                                        <line x1="5" y1="12" x2="19" y2="12" />
+                                    </svg>
+                                    <span>Upload</span></label>
                             </div>
                         </div>
-                        <div class="col-md-6 pb-30">
+                        <!-- multiple file upload -->
+                        <!-- <div class="col-md-6 pb-30">
                             <div class="form-control d-flex align-items-center justify-content-between flex-row-reverse multi-upload-wrap" for="actual-btn2">
-                                <input type="file" id="actual-btn2" hidden multiple/>
-                                
-
+                                <input type="file" id="actual-btn2" hidden multiple />
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="file" hidden multiple onchange="javascript:updateList()">
-                                    <label class="custom-file-label section-des" for="file"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    <span id="file-chosen2" class="file-chosen2">Upload profile picture</span>
+                                    <label class="custom-file-label section-des cursor-pointer" for="file"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                            <line x1="12" y1="5" x2="12" y2="19" />
+                                            <line x1="5" y1="12" x2="19" y2="12" />
+                                        </svg>
                                         <span>Upload</span></label>
                                 </div>
                                 <ul id="fileList" class="file-list"></ul>
                             </div>
+                        </div> -->
+
+                        <!-- multiple file upload -->
+                        <div class="col-md-6 pb-30">
+                            <div class="form-control position-relative d-flex align-items-center justify-content-between flex-row-reverse multi-upload-wrap" for="actual-btn2">
+                                <label class="custom-file-label section-des cursor-pointer" for="as"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                        <line x1="12" y1="5" x2="12" y2="19" />
+                                        <line x1="5" y1="12" x2="19" y2="12" />
+                                    </svg> <span>Upload</span>
+                                </label>
+                                <div class="file-uploader__message-area">
+                                    <p class="multple-upload-label">Select a file to upload</p>
+                                </div>
+                                <div class="file-chooser">
+                                    <input class="file-chooser__input" type="file" multiple hidden id="as">
+                                </div>
+                            </div>
                         </div>
+
+
                         <div class="col-12 pb-30">
-                            <button type="submit" class="btn btn-primary w-100 d-block">Continue</button>
+                            <!-- <button type="submit" class="btn btn-primary w-100 d-block">Continue</button> -->
+                            <a href="index.html" class="btn btn-primary w-100 d-block">Continue</a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-   <!-- Jquery JS-->
+    <!-- Jquery JS-->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <!-- Bootstrap Bundle JS-->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <!-- main menu js -->
+    <script src="assets/js/vendor/jquery.meanmenu.js"></script>
+    <!-- owl carousel js -->
+    <script src="assets/js/vendor/owl.carousel.min.js"></script>
+    <!-- countrySelect js -->
+    <script src="assets/js/vendor/countrySelect.js"></script>
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/a88d68a587.js"></script>
+    <!-- date picker -->
+    <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+    <!-- Language Picker js -->
+    <script src="assets/js/language-picker.js"></script>
+    <!-- Theme Main JS-->
+    <script src="assets/js/main.js"></script>
+    <!-- multiple file upload -->
+    <script>
 
-   <script src="assets/js/vendor/jquery.min.js"></script>
-   <!-- Bootstrap Bundle JS-->
-   <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-   <script src="assets/js/vendor/jquery.meanmenu.js"></script>
-   <!-- owl carousel js -->
-   <script src="assets/js/vendor/owl.carousel.min.js"></script>
-   <!-- countrySelect js -->
-   <script src="assets/js/vendor/countrySelect.js"></script>
-   <!-- Font Awesome  -->
-   <script src="https://kit.fontawesome.com/a88d68a587.js"></script>
-   <!-- date picker -->
-   <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
-   <!-- Theme Main JS-->
-   <script src="assets/js/main.js"></script>
+        (function ($) {
+            $.fn.uploader = function (options) {
+                var settings = $.extend(
+                    {
+                        MessageAreaText: "No files selected.",
+                        MessageAreaTextWithFiles: "",
+                        DefaultErrorMessage: "Unable to open this file.",
+                        BadTypeErrorMessage: "We cannot accept this file type at this time.",
+                        acceptedFileTypes: [
+                            "pdf",
+                            "jpg",
+                            "gif",
+                            "jpeg",
+                            "bmp",
+                            "tif",
+                            "tiff",
+                            "png",
+                            "xps",
+                            "doc",
+                            "docx",
+                            "fax",
+                            "wmp",
+                            "ico",
+                            "txt",
+                            "cs",
+                            "rtf",
+                            "xls",
+                            "xlsx"
+                        ]
+                    },
+                    options
+                );
+
+                var uploadId = 1;
+                //update the messaging
+                $(".file-uploader__message-area p").text(
+                    options.MessageAreaText || settings.MessageAreaText
+                );
+
+                //create and add the file list and the hidden input list
+                var fileList = $('<ul class="file-list"></ul>');
+                var hiddenInputs = $('<div class="hidden-inputs hidden"></div>');
+                $(".file-uploader__message-area").after(fileList);
+                $(".file-list").after(hiddenInputs);
+
+                //when choosing a file, add the name to the list and copy the file input into the hidden inputs
+                $(".file-chooser__input").on("change", function () {
+                    var files = document.querySelector(".file-chooser__input").files;
+
+                    for (var i = 0; i < files.length; i++) {
+                        console.log(files[i]);
+
+                        var file = files[i];
+                        var fileName = file.name.match(/([^\\\/]+)$/)[0];
+
+                        //clear any error condition
+                        $(".file-chooser").removeClass("error");
+                        $(".error-message").remove();
+
+                        //validate the file
+                        var check = checkFile(fileName);
+                        if (check === "valid") {
+                            // move the 'real' one to hidden list
+                            $(".hidden-inputs").append($(".file-chooser__input"));
+
+                            //insert a clone after the hiddens (copy the event handlers too)
+                            $(".file-chooser").append(
+                                $(".file-chooser__input").clone({ withDataAndEvents: true })
+                            );
+
+                            //add the name and a remove button to the file-list
+                            $(".file-list").append(
+                                '<li style="display: none;"><span class="file-list__name">' +
+                                fileName +
+                                '</span><button class="removal-button" data-uploadid="' +
+                                uploadId +
+                                '"></button></li>'
+                            );
+                            $(".file-list").find("li:last").show(800);
+
+                            //removal button handler
+                            $(".removal-button").on("click", function (e) {
+                                e.preventDefault();
+
+                                //remove the corresponding hidden input
+                                $(
+                                    '.hidden-inputs input[data-uploadid="' +
+                                    $(this).data("uploadid") +
+                                    '"]'
+                                ).remove();
+
+                                //remove the name from file-list that corresponds to the button clicked
+                                $(this)
+                                    .parent()
+                                    .hide("puff")
+                                    .delay(10)
+                                    .queue(function () {
+                                        $(this).remove();
+                                    });
+
+                                //if the list is now empty, change the text back
+                                if ($(".file-list li").length === 0) {
+                                    $(".file-uploader__message-area").text(
+                                        options.MessageAreaText || settings.MessageAreaText
+                                    );
+                                }
+                            });
+
+                            //so the event handler works on the new "real" one
+                            $(".hidden-inputs .file-chooser__input")
+                                .removeClass("file-chooser__input")
+                                .attr("data-uploadId", uploadId);
+
+                            //update the message area
+                            $(".file-uploader__message-area").text(
+                                options.MessageAreaTextWithFiles ||
+                                settings.MessageAreaTextWithFiles
+                            );
+
+                            uploadId++;
+                        } else {
+                            //indicate that the file is not ok
+                            $(".file-chooser").addClass("error");
+                            var errorText =
+                                options.DefaultErrorMessage || settings.DefaultErrorMessage;
+
+                            if (check === "badFileName") {
+                                errorText =
+                                    options.BadTypeErrorMessage || settings.BadTypeErrorMessage;
+                            }
+
+                            $(".file-chooser__input").after(
+                                '<p class="error-message">' + errorText + "</p>"
+                            );
+                        }
+                    }
+                });
+
+                var checkFile = function (fileName) {
+                    var accepted = "invalid",
+                        acceptedFileTypes =
+                            this.acceptedFileTypes || settings.acceptedFileTypes,
+                        regex;
+
+                    for (var i = 0; i < acceptedFileTypes.length; i++) {
+                        regex = new RegExp("\\." + acceptedFileTypes[i] + "$", "i");
+
+                        if (regex.test(fileName)) {
+                            accepted = "valid";
+                            break;
+                        } else {
+                            accepted = "badFileName";
+                        }
+                    }
+
+                    return accepted;
+                };
+            };
+        })($);
+
+        //init
+        $(document).ready(function () {
+            console.log("hi");
+            $(".fileUploader").uploader({
+                MessageAreaText: "Upload NID Card"
+            });
+        });
+
+    </script>
 </body>
 
 </html>
