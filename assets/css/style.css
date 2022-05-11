@@ -42,6 +42,8 @@
   --bs-403B3B: #403b3b;
   --bs-6ACEB6F9: #6aceb6f9;
   --bs-6aceb6fa: #6aceb6fa;
+  --bs-929292: #929292;
+  --bs-F5FFFDF9: #f5fffdf9;
   /* theme font family */
   --Montserrat: "Montserrat", sans-serif;
   --Roboto: "Poppins", sans-serif;
@@ -53,6 +55,7 @@
   --fs-65: 65px;
   --fs-45: 45px;
   --fs-26: 26px;
+  --fs-22: 22px;
   --fs-20: 20px;
   --fs-18: 18px;
   /* theme common fonts size with line height */
@@ -60,6 +63,7 @@
   --lh-65: 65px;
   --lh-55: 55px;
   --lh-34: 34px;
+  --lh-31: 31px;
   --lh-26: 26px;
   --lh-21: 21px;
   /* theme common character spacing */
@@ -959,28 +963,20 @@ img {
   border-bottom: 0;
 }
 
-.select-styled:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 16px;
-  right: 10px;
-  background: url("../images/chevron-down.svg");
-}
-
-.select-styled:after {
+.trade-margin-inner-left .select-styled:after {
   content: "";
   width: 16px;
   height: 16px;
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: 0;
   background: url("../images/chevron-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: -10px;
+  margin-top: 0;
   transition: var(--theme-transition);
+  transform: translateY(-50%);
+  display: none;
 }
 
 /* .select-styled:hover {
@@ -2767,7 +2763,7 @@ ul#fileList {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  color: #585858;
+  color: var(--bs-585858);
 }
 
 .language-picker__flag::before {
@@ -2999,13 +2995,209 @@ ul.file-list li {
   background-color: #d65d38;
   color: white;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-ul,
-li {
-  margin: 0;
+
+/* trade margin page style here.... */
+.trade-margin-top-bar.alert {
+  position: relative;
   padding: 0;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--bs-D2D2D2);
+  max-height: 77px;
+  overflow: hidden;
+  transition: var(--theme-transition);
+  padding-top: 25px;
+}
+
+.trade-top-item .section-des {
+  font-size: var(--fs-16);
+  padding-bottom: 25px;
+}
+.trade-margin-top-bar.alert.trade-margin-top-bar-expand {
+  max-height: 300px;
+}
+.trade-margin-top-bar-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+.trade-top-control {
+  width: 56px;
+}
+.close-trade-top {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bs-D2D2D2);
+  border-radius: 100%;
+}
+.trade-margin-page-wrap {
+  border: 1px solid var(--bs-D2D2D2);
+  border-top: 0;
+  width: 100%;
+}
+/* trade margin inner heading style here.. */
+.trade-margin-heading-wrap {
+  padding: 16px 20px;
+}
+.trade-margin-heading-item .title {
+  font-size: var(--fs-26);
+  line-height: var(--lh-34);
+  font-family: var(--Montserrat);
+  font-weight: medium;
+  color: var(--bs-000000);
+  letter-spacing: var(--ls-0-78);
+  padding-bottom: 5px;
+}
+.trade-margin-heading-item .bitcoin-price-link {
+  font-size: var(--fs-18);
+  line-height: var(--lh-31);
+  font-family: var(--Montserrat);
+  font-weight: normal;
+  color: var(--bs-929292);
+  letter-spacing: var(--ls-0-54);
+  text-transform: capitalize;
+  text-decoration: underline !important;
+}
+.trade-margin-heading-item .section-des {
+  font-size: var(--fs-18);
+  line-height: var(--lh-31);
+  font-family: var(--Montserrat);
+  font-weight: normal;
+  color: var(--bs-929292);
+  letter-spacing: var(--ls-0-54);
+}
+.color-343434F9 {
+  color: var(--bs-343434F9) !important;
+}
+.color-6ACEB6F9 {
+  color: var(--bs-6ACEB6F9) !important;
+}
+.color-F82323F9 {
+  color: var(--bs-F82323F9) !important;
+}
+.section-des.color-6ACEB6F9 {
+  font-size: var(--fs-22);
+}
+/* trade-margin-heading-right */
+#spotTutorials .modal-dialog {
+  max-width: 1070px;
+}
+.trade-margin-heading-right {
+  width: 135px;
+  margin-left: 56px;
+}
+/* Trade inner content style here... */
+.trade-margin-inner-wrap {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(20px, 1fr));
+  border-top: 1px solid var(--bs-D2D2D2);
+}
+/* trade margin inner left  */
+.left-top {
+  padding: 20px 10px;
+  background: var(--bs-F5FFFDF9);
+  border-bottom: 1px solid var(--bs-D2D2D2);
+  position: relative;
+}
+.trade-margin-inner-left .nav-pills .nav-link {
+  background: 0 0;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0;
+  background: transparent;
+  opacity: 0.5;
+}
+.trade-margin-inner-left .nav-pills .nav-link.active,
+.trade-margin-inner-left .nav-pills .show > .nav-link {
+  opacity: 1;
+}
+.trade-margin-inner-left .select-styled:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: url("../images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 0;
+  transition: var(--theme-transition);
+  transform: translateY(-50%);
+  display: block;
+}
+.trade-margin-inner-left .select-options {
+  background-color: var(--bs-F5FFFDF9);
+  transform: translateY(21px);
+}
+.trade-margin-inner-left .select-options li,
+.trade-margin-inner-left .select-styled {
+  padding-right: 20px;
+  color: var(--bs-585858);
+  font-size: var(--fs-18);
+  font-family: var(--Montserrat);
+  line-height: var(--lh-21);
+  letter-spacing: var(--ls-0-54);
+}
+.trade-margin-inner-left .form-check-input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  margin-right: 3px;
+}
+.trade-margin-inner-left .form-check-label {
+  font-family: var(--Roboto);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--fs-14);
+  line-height: var(--lh-26);
+  letter-spacing: var(--ls-0-54);
+  color: var(--bs-888888);
+  padding: 0;
+  white-space: nowrap;
+}
+.left-main-content {
+  padding: 20px 10px 40px 10px;
+}
+.left-main-content-header-items {
+  border-bottom: 1px solid var(--bs-D2D2D2);
+  padding-bottom: 12px;
+}
+.left-main-content-items {
+  padding-top: 20px;
+}
+.db-data-txt {
+  font-family: var(--Roboto);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--fs-14);
+  line-height: var(--lh-31);
+  letter-spacing: 0.42px;
+  text-transform: capitalize;
+  color: var(--bs-888888);
+}
+/* trade margin inner middle  */
+.trade-margin-inner-middle {
+  grid-column: 2/5;
+  border-left: 1px solid var(--bs-D2D2D2);
+  border-right: 1px solid var(--bs-D2D2D2);
+}
+/* Trade Footer */
+.trade-footer .nav-link {
+  font-family: var(--Roboto);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--fs-18);
+  line-height: var(--lh-26);
+  letter-spacing: var(--ls-0-54);
+  color: var(--bs-888888);
+  padding: 0;
+}
+.trade-footer .nav-link:hover,
+.trade-footer .nav-link.active {
+  color: var(--bs-6ACEB6F9) !important;
 }
