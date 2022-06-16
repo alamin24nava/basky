@@ -1,1066 +1,2286 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Contact Us</title>
+    <title>Trade Margin</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap v5.0.2 CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
     <!-- main menu css -->
-    <link rel="stylesheet" href="assets/css/vendor/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/vendor/meanmenu.css" />
     <!-- owl carousel css -->
-    <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/owl.theme.default.min.css" />
     <!-- country Select css -->
-    <link rel="stylesheet" href="assets/css/vendor/countrySelect.css">
+    <link rel="stylesheet" href="assets/css/vendor/countrySelect.css" />
     <!-- Date Picker -->
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css"
+    />
     <!-- Custom style  -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- responsive style -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-</head>
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+  </head>
 
-<body>
+  <body>
     <!-- baskypi Header Area -->
     <header class="theme-header">
-        <!-- Navber Area Start -->
-        <div class="navbar-area">
-            <div class="theme-responsive-nav">
-                <div class="container">
-                    <div class="theme-responsive-menu">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/images/header-logo.png" class="white-logo" alt="logo">
-                                <img src="assets/images/header-logo.png" class="black-logo" alt="logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Navber Area Start -->
+      <div class="navbar-area">
+        <div class="d-block d-lg-none">
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="logo">
+                <a href="index.html">
+                  <img
+                    src="assets/images/header-logo.png"
+                    class="white-logo"
+                    alt="logo"
+                  />
+                  <img
+                    src="assets/images/dark.png"
+                    class="black-logo"
+                    alt="logo"
+                  />
+                </a>
+              </div>
+              <ul class="menu-trigger">
+                <li class="first"></li>
+                <li class="second"></li>
+                <li class="third"></li>
+              </ul>
             </div>
-
-            <div class="theme-nav">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/header-logo.png" class="white-logo" alt="logo">
-                            <img src="assets/images/header-logo.png" class="black-logo" alt="logo">
-                        </a>
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav align-items-center column-gap-6">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link active">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Wallet</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact-us.html" class="nav-link">Contact Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Exchange</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="other-option">
-                            <div class="section-des section-des-other">
-                                <div class="js">
-                                    <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
-                                        <form action="" class="language-picker__form">
-                                            <label for="language-picker-select">Select your language</label>
-                                            <select name="language-picker-select" id="language-picker-select">
-                                                <option lang="de" value="deutsch">Deutsch</option>
-                                                <option lang="en" value="english" selected>English</option>
-                                                <option lang="fr" value="francais">Français</option>
-                                                <option lang="it" value="italiano">Italiano</option>
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section-des section-des-other usd">
-                                <select class="theme-select-input">
-                                    <!-- <option value="hide">-- Year --</option> -->
-                                    <option value="usd">USD</option>
-                                    <option value="eur">EUR</option>
-                                    <option value="cad">CAD</option>
-                                    <option value="aud">AUD</option>
-                                </select>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
-                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-                            </svg>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+          </div>
         </div>
+        <ul class="responsive-menu">
+          <li>
+            <a href="index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="trade-margin.html">Wallet</a>
+          </li>
+          <li>
+            <a href="contact-us.html">Contact Us</a>
+          </li>
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
+
+        <div class="theme-nav">
+          <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="assets/images/header-logo.png"
+                  class="white-logo"
+                  alt="logo"
+                />
+                <img
+                  src="assets/images/dark.png"
+                  class="black-logo"
+                  alt="logo"
+                />
+              </a>
+              <div
+                class="collapse navbar-collapse mean-menu"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav align-items-center column-gap-6">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="trade-margin.html" class="nav-link">Wallet</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact-us.html" class="nav-link">Contact Us</a>
+                  </li>
+                  <li class="d-lg-none">
+                    <a href="login.html">Login</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="other-option">
+                <div class="section-des section-des-other">
+                  <div class="js">
+                    <div
+                      class="language-picker js-language-picker"
+                      data-trigger-class="btn btn--subtle"
+                    >
+                      <form action="" class="language-picker__form">
+                        <label for="language-picker-select"
+                          >Select your language</label
+                        >
+                        <select
+                          name="language-picker-select"
+                          id="language-picker-select"
+                        >
+                          <option lang="de" value="deutsch">Deutsch</option>
+                          <option lang="en" value="english" selected>
+                            English
+                          </option>
+                          <option lang="fr" value="francais">Français</option>
+                          <option lang="it" value="italiano">Italiano</option>
+                        </select>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-des section-des-other usd">
+                  <select class="theme-select-input">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="cad">CAD</option>
+                    <option value="aud">AUD</option>
+                  </select>
+                </div>
+                <div class="dashboard-right d-flex align-items-center">
+                  <div class="dashboard-profile">
+                    <img
+                      class="image"
+                      src="assets/images/profile.jpg"
+                      alt="profile"
+                    />
+                    <span class="name"
+                      >kaji Hasib <i class="fa fa-angle-down"></i
+                    ></span>
+                    <ul class="dashboard-dropdown">
+                      <li><a href="#">Profile</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                  </div>
+                  <span class="notification"><i class="fa fa-bell"></i></span>
+                </div>
+
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                                </svg> -->
+                <div class="dark-light-theme-icon ms-4">
+                  <div class="darkmode-btn-wrapper">
+                    <div
+                      class="switch-btn d-flex align-items-center justify-content-between"
+                    >
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="margin-left: 6px"
+                      >
+                        <g clip-path="url(#clip0_586_811)">
+                          <path
+                            d="M6.00009 3.34893C7.46418 3.34893 8.65106 4.53582 8.65106 5.99991C8.65106 7.464 7.46418 8.65088 6.00009 8.65088C4.536 8.65088 3.34912 7.464 3.34912 5.99991C3.34912 4.53582 4.536 3.34893 6.00009 3.34893Z"
+                            fill="black"
+                          ></path>
+                          <path
+                            d="M5.99997 2.91559C4.29921 2.91559 2.91553 4.29928 2.91553 6.00003C2.91553 7.70078 4.29921 9.08447 5.99997 9.08447C7.70072 9.08447 9.08441 7.70078 9.08441 6.00003C9.08441 4.29928 7.70072 2.91559 5.99997 2.91559ZM5.99997 8.21759C4.77724 8.21759 3.78246 7.22281 3.78246 6.00009C3.78246 4.77736 4.77724 3.78258 5.99997 3.78258C7.22269 3.78258 8.21747 4.77736 8.21747 6.00009C8.21747 7.22281 7.22269 8.21759 5.99997 8.21759Z"
+                            fill="black"
+                          ></path>
+                          <path
+                            d="M5.99988 9.72372C5.76049 9.72372 5.56641 9.9178 5.56641 10.1572V11.5665C5.56641 11.8059 5.76049 12 5.99988 12C6.23927 12 6.43335 11.8059 6.43335 11.5665V10.1572C6.43335 9.9178 6.23927 9.72372 5.99988 9.72372Z"
+                            fill="black"
+                          ></path>
+                          <path
+                            d="M5.99988 -0.00015831C5.76049 -0.00015831 5.56641 0.193919 5.56641 0.433309V1.84266C5.56641 2.08205 5.76049 2.27612 5.99988 2.27612C6.23927 2.27612 6.43335 2.08205 6.43335 1.84266V0.433309C6.43335 0.193861 6.23927 -0.00015831 5.99988 -0.00015831Z"
+                            fill="black"
+                          ></path>
+                          <path
+                            d="M11.5664 5.56641H10.1571C9.91771 5.56641 9.72363 5.76049 9.72363 5.99988C9.72363 6.23927 9.91771 6.43335 10.1571 6.43335H11.5664C11.8058 6.43335 11.9999 6.23927 11.9999 5.99988C11.9999 5.76049 11.8059 5.56641 11.5664 5.56641Z"
+                            fill="black"
+                          ></path>
+                          <path
+                            d="M1.84281 5.56641H0.433468C0.194078 5.56641 0 5.76049 0 5.99988C0 6.23927 0.194078 6.43335 0.433468 6.43335H1.84281C2.0822 6.43335 2.27628 6.23927 2.27628 5.99988C2.27628 5.76049 2.0822 5.56641 1.84281 5.56641Z"
+                            fill="black"
+                          ></path>
+                          <path
+                            d="M8.9398 8.50617C8.82889 8.50617 8.71792 8.54848 8.63331 8.63315C8.46403 8.80243 8.46403 9.07691 8.63331 9.24613L9.62989 10.2426C9.79917 10.4119 10.0736 10.412 10.2429 10.2426C10.4122 10.0734 10.4122 9.79889 10.2429 9.62966L9.24629 8.63315C9.16168 8.54848 9.05071 8.50617 8.9398 8.50617Z"
+                            fill="black"
+                          ></path>
+                          <path
+                            d="M2.06382 1.6304C1.95291 1.6304 1.84195 1.67271 1.75733 1.75738C1.58805 1.92666 1.58805 2.20113 1.75733 2.37036L2.7539 3.36693C2.92319 3.53622 3.19766 3.53622 3.36689 3.36693C3.53617 3.19765 3.53617 2.92318 3.36689 2.75395L2.37031 1.75738C2.2857 1.67271 2.17479 1.6304 2.06382 1.6304Z"
+                            fill="black"
+                          ></path>
+                          <path
+                            d="M9.93589 1.6304C9.82498 1.6304 9.71401 1.67271 9.6294 1.75738L8.63282 2.75395C8.46354 2.92323 8.46354 3.19771 8.63282 3.36693C8.80211 3.53622 9.07658 3.53622 9.24581 3.36693L10.2424 2.37036C10.4117 2.20108 10.4117 1.9266 10.2424 1.75738C10.1578 1.67271 10.0469 1.6304 9.93589 1.6304Z"
+                            fill="black"
+                          ></path>
+                          <path
+                            d="M3.0604 8.50617C2.94949 8.50617 2.83852 8.54848 2.7539 8.63315L1.75733 9.62966C1.58805 9.79895 1.58805 10.0734 1.75733 10.2426C1.92662 10.4119 2.20109 10.412 2.37031 10.2426L3.36689 9.24613C3.53617 9.07685 3.53617 8.80243 3.36689 8.63315C3.28227 8.54848 3.17136 8.50617 3.0604 8.50617Z"
+                            fill="black"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_586_811">
+                            <rect
+                              width="12"
+                              height="12"
+                              fill="white"
+                              transform="matrix(1 0 0 -1 0 12)"
+                            ></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <svg
+                        width="11"
+                        height="12"
+                        viewBox="0 0 11 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="margin-right: 6px"
+                      >
+                        <path
+                          d="M10.7681 8.33368C7.75015 8.93936 4.79446 7.00423 4.16634 4.01153C3.87553 2.62578 4.13554 1.25704 4.79747 0.125627C1.89749 0.819642 0.0609801 3.67027 0.674674 6.59452C1.3028 9.58723 4.25848 11.5224 7.27647 10.9167C8.897 10.5914 10.2052 9.59932 10.9728 8.28725C10.9049 8.30359 10.8371 8.31999 10.7681 8.33368Z"
+                          fill="white"
+                        ></path></svg
+                      ><button type="button" class="switch"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- Page Main content -->
     <section class="trade-margin bg">
-        <div class="alert trade-margin-top-bar fade show" role="alert">
-            <div class="trade-margin-top-bar-inner d-flex  justify-content-between gap-2">
-                <div class="trade-top-items d-flex align-items-center justify-content-between w-100 gap-5">
-                    <div class="trade-top-item w-100">
-                        <p class="section-des">Lorem ipsum dolor consetetur sad... <span>(04-45)</span></p>
-                        <p class="section-des">Lorem ipsum dolor consetetur sad... <span>(04-45)</span></p>
-                        <p class="section-des">Lorem ipsum dolor consetetur sad... <span>(04-45)</span></p>
-                    </div>
-                    <div class="trade-top-item w-100">
-                        <p class="section-des">Lorem ipsum dolor consetetur sad... <span>(04-45)</span></p>
-                        <p class="section-des">Lorem ipsum dolor consetetur sad... <span>(04-45)</span></p>
-                        <p class="section-des">Lorem ipsum dolor consetetur sad... <span>(04-45)</span></p>
-                    </div>
-                    <div class="trade-top-item w-100">
-                        <p class="section-des">Lorem ipsum dolor consetetur sad... <span>(04-45)</span></p>
-                        <p class="section-des">Lorem ipsum dolor consetetur sad... <span>(04-45)</span></p>
-                        <p class="section-des">Lorem ipsum dolor consetetur sad... <span>(04-45)</span></p>
-                    </div>
-                </div>
-                <div class="d-flex gap-3 trade-top-control">
-                    <div id="trade-top-down-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                            <polyline points="6 9 12 15 18 9" />
-                        </svg>
-                    </div>
-                    <div id="trade-top-up-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
-                            <polyline points="18 15 12 9 6 15" />
-                        </svg>
-                    </div>
-                    <div class="close-trade-top" data-bs-dismiss="alert" aria-label="Close">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                            <line x1="18" y1="6" x2="6" y2="18" />
-                            <line x1="6" y1="6" x2="18" y2="18" />
-                        </svg>
-                    </div>
-                </div>
+      <div class="alert trade-margin-top-bar fade show" role="alert">
+        <div
+          class="trade-margin-top-bar-inner d-flex justify-content-between gap-2"
+        >
+          <div
+            class="trade-top-items d-flex align-items-center justify-content-xxl-between w-100 gap-5 flex-wrap"
+          >
+            <div class="trade-top-item">
+              <p class="section-des">
+                Lorem ipsum dolor consetetur sad... <span>(04-45)</span>
+              </p>
+              <p class="section-des">
+                Lorem ipsum dolor consetetur sad... <span>(04-45)</span>
+              </p>
+              <p class="section-des">
+                Lorem ipsum dolor consetetur sad... <span>(04-45)</span>
+              </p>
             </div>
+            <div class="trade-top-item">
+              <p class="section-des">
+                Lorem ipsum dolor consetetur sad... <span>(04-45)</span>
+              </p>
+              <p class="section-des">
+                Lorem ipsum dolor consetetur sad... <span>(04-45)</span>
+              </p>
+              <p class="section-des">
+                Lorem ipsum dolor consetetur sad... <span>(04-45)</span>
+              </p>
+            </div>
+            <div class="trade-top-item">
+              <p class="section-des">
+                Lorem ipsum dolor consetetur sad... <span>(04-45)</span>
+              </p>
+              <p class="section-des">
+                Lorem ipsum dolor consetetur sad... <span>(04-45)</span>
+              </p>
+              <p class="section-des">
+                Lorem ipsum dolor consetetur sad... <span>(04-45)</span>
+              </p>
+            </div>
+          </div>
+          <div class="d-flex gap-3 trade-top-control">
+            <div id="trade-top-down-arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#888888"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-down"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+            <div id="trade-top-up-arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#888888"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-up"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+            <div
+              class="close-trade-top"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-x"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </div>
+          </div>
         </div>
-        <div class="container">
-            <div class="trade-margin-page-wrap pt-md-0 pt-5">
-                <!-- trade margin inner content -->
-                <div class="trade-margin-heading-wrap d-flex align-items-center">
-                    <div class="trade-margin-heading-left d-flex align-items-center justify-content-between w-100 gap-5">
-                        <div class="trade-margin-heading-item">
-                            <h3 class="title">BTC/USDT</h3>
-                            <a href="#" class="bitcoin-price-link">Bitcoin Price</a>
-                        </div>
-                        <div class="trade-margin-heading-item">
-                            <p class="section-des color-6ACEB6F9 pb-2">12,230.00</p>
-                            <p class="section-des color-343434F9">$12,230.00</p>
-                        </div>
-                        <div class="trade-margin-heading-item">
-                            <p class="section-des pb-2">24h Change</p>
-                            <p class="section-des color-F82323F9">-8,171.21-3.22%</p>
-                        </div>
-                        <div class="trade-margin-heading-item">
-                            <p class="section-des pb-2">24h High</p>
-                            <p class="section-des color-343434F9">13,781.00</p>
-                        </div>
-                        <div class="trade-margin-heading-item">
-                            <p class="section-des pb-2">24h Low</p>
-                            <p class="section-des color-343434F9">13,781.00</p>
-                        </div>
-                        <div class="trade-margin-heading-item">
-                            <p class="section-des pb-2">24h Volume(BTC)</p>
-                            <p class="section-des color-343434F9">13,781.00</p>
-                        </div>
-                        <div class="trade-margin-heading-item">
-                            <p class="section-des pb-2">24h Volume(USDT)</p>
-                            <p class="section-des color-343434F9">13,781.00</p>
-                        </div>
-                    </div>
-                    <div class="trade-margin-heading-right">
-                        <!-- Button trigger modal -->
-                        <div type="button" class="video-btn d-flex align-items-center gap-2" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-bs-target="#spotTutorials">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle">
-                                <circle cx="12" cy="12" r="10" />
-                                <polygon points="10 8 16 12 10 16 10 8" />
-                            </svg> Spot tutorial
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="spotTutorials" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog  modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <div class="ratio ratio-16x9">
-                                            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="trade-margin-inner-wrap">
-                    <div class="trade-margin-inner-left">
-                        <div class="left-top d-flex align-items-center justify-content-between">
-                            <ul class="nav nav-pills gap-3" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="css-3kwgah">
-                                            <path d="M4 4h7v7H4V4z" fill="#F82323F9"></path>
-                                            <path d="M4 13h7v7H4v-7z" fill="#6ACEB6F9"></path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 4h7v4h-7V4zm0 6h7v4h-7v-4zm7 6h-7v4h7v-4z" fill="#888888"></path>
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="css-3kwgah">
-                                            <path d="M4 4h7v16H4V4z" fill="#6ACEB6F9"></path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 4h7v4h-7V4zm0 6h7v4h-7v-4zm7 6h-7v4h7v-4z" fill="#888888"></path>
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="css-3kwgah">
-                                            <path d="M4 4h7v16H4V4z" fill="#F82323F9"></path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 4h7v4h-7V4zm0 6h7v4h-7v-4zm7 6h-7v4h7v-4z" fill="#888888"></path>
-                                        </svg>
-                                    </button>
-                                </li>
-                            </ul>
-                            <div class="d-flex align-items-center">
-                                <select class="theme-select-input">
-                                    <option value="1">0.1</option>
-                                    <option value="1">0.01</option>
-                                    <option value="10">10</option>
-                                    <option value="2">2</option>
-                                    <option value="50">50</option>
-                                </select>
-                                <div class="dropstart text-end ms-3">
-                                    <button type="button" class="bg-transparent dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="true">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="12" cy="5" r="1"></circle>
-                                            <circle cx="12" cy="19" r="1"></circle>
-                                        </svg>
-                                    </button>
-                                    <ul class="dropdown-menu py-2 px-3" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-26px, 0px);" data-popper-placement="left-start">
-                                        <div class="form-check d-flex align-items-center mb-0">
-                                            <input class="form-check-input" type="checkbox" id="displayAvg">
-                                            <label class="form-check-label" for="displayAvg">
-                                                Display Avg.&Sum
-                                            </label>
-                                        </div>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-content left-main-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="left-main-content-header-items d-flex align-items-end justify-content-between">
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Price (USDT)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Amount (BTC)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Total</h3>
-                                    </div>
-                                </div>
-                                <div class="left-main-content-items-wrap">
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                <div class="left-main-content-header-items d-flex align-items-end justify-content-between">
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Price (USDT)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Amount (BTC)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Total</h3>
-                                    </div>
-                                </div>
-                                <div class="left-main-content-items-wrap">
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.2069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.9869</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">5.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">3.0569</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.9069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">6.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">9.6569</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                <div class="left-main-content-header-items d-flex align-items-end justify-content-between">
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Price (USDT)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Amount (BTC)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Total</h3>
-                                    </div>
-                                </div>
-                                <div class="left-main-content-items-wrap">
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0569</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">5.0049</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">8.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">8187.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">8.0045</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">5.241.11</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">7813.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.1569</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.214.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2155.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">8913.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.5769</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">9.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">6.0669</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">6.0669</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0569</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">6.0449</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0349</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0669</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.656.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">4.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.233.19</p>
-                                        </div>
-                                    </div>
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="trade-margin-inner-middle">
-                        sdfsd
-                    </div>
-                    <div class="trade-margin-inner-left">
-                        <div class="left-top d-flex align-items-center justify-content-between">
-                            <div class="nav nav-pills gap-3 owl-carousel trade-margin-curr" id="pills-tab" role="tablist">
-                                <div class="nav-item" role="presentation">
-                                    <button class="nav-link section-des color-343434F9 active" id="pills-currency-1-tab" data-bs-toggle="pill" data-bs-target="#pills-currency-1" type="button" role="tab" aria-controls="pills-currency-1" aria-selected="true">
-                                        BUSD
-                                    </button>
-                                </div>
-                                <div class="nav-item" role="presentation">
-                                    <button class="nav-link section-des color-343434F9" id="pills-currency-2-tab" data-bs-toggle="pill" data-bs-target="#pills-currency-2" type="button" role="tab" aria-controls="pills-currency-2" aria-selected="false">
-                                        USDT
-                                    </button>
-                                </div>
-                                <div class="nav-item" role="presentation">
-                                    <button class="nav-link section-des color-343434F9" id="pills-currency-3-tab" data-bs-toggle="pill" data-bs-target="#pills-currency-3" type="button" role="tab" aria-controls="pills-currency-3" aria-selected="false">
-                                        BNB
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tab-content left-main-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-currency-1" role="tabpanel" aria-labelledby="pills-currency-1-tab">
-                                <div class="left-main-content-header-items d-flex align-items-end justify-content-between">
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Price (USDT)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Amount (BTC)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Total</h3>
-                                    </div>
-                                </div>
-                                <div class="left-main-content-items-wrap">
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">6.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-currency-2" role="tabpanel" aria-labelledby="pills-currency-2-tab">
-                                <div class="left-main-content-header-items d-flex align-items-end justify-content-between">
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Price (USDT)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Amount (BTC)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Total</h3>
-                                    </div>
-                                </div>
-                                <div class="left-main-content-items-wrap">
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">4.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-currency-3" role="tabpanel" aria-labelledby="pills-currency-3-tab">
-                                <div class="left-main-content-header-items d-flex align-items-end justify-content-between">
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Price (USDT)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Amount (BTC)</h3>
-                                    </div>
-                                    <div class="left-main-content-header-item">
-                                        <h3 class="section-des color-343434F9">Total</h3>
-                                    </div>
-                                </div>
-                                <div class="left-main-content-items-wrap">
-                                    <div class="left-main-content-items  d-flex align-items-end justify-content-between">
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt color-F82323F9">2113.11</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">0.0069</p>
-                                        </div>
-                                        <div class="left-main-content-item">
-                                            <p class="db-data-txt">1.206.19</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="container">
+        <div class="trade-margin-page-wrap">
+          <!-- trade margin inner content -->
+          <div
+            class="trade-margin-heading-wrap d-flex align-items-center flex-xxl-nowrap flex-wrap"
+          >
+            <div
+              class="trade-margin-heading-left d-flex align-items-center justify-content-lg-between w-100 gap-5 flex-xl-nowrap flex-wrap"
+            >
+              <div class="trade-margin-heading-item">
+                <h3 class="title">BTC/USDT</h3>
+                <a href="#" class="bitcoin-price-link">Bitcoin Price</a>
+              </div>
+              <div class="trade-margin-heading-item">
+                <p class="section-des color-6ACEB6F9 pb-2">12,230.00</p>
+                <p class="section-des color-343434F9">$12,230.00</p>
+              </div>
+              <div class="trade-margin-heading-item">
+                <p class="section-des pb-2">24h Change</p>
+                <p class="section-des color-F82323F9">-8,171.21-3.22%</p>
+              </div>
+              <div class="trade-margin-heading-item">
+                <p class="section-des pb-2">24h High</p>
+                <p class="section-des color-343434F9">13,781.00</p>
+              </div>
+              <div class="trade-margin-heading-item">
+                <p class="section-des pb-2">24h Low</p>
+                <p class="section-des color-343434F9">13,781.00</p>
+              </div>
+              <div class="trade-margin-heading-item">
+                <p class="section-des pb-2">24h Volume(BTC)</p>
+                <p class="section-des color-343434F9">13,781.00</p>
+              </div>
+              <div class="trade-margin-heading-item">
+                <p class="section-des pb-2">24h Volume(USDT)</p>
+                <p class="section-des color-343434F9">13,781.00</p>
+              </div>
             </div>
+            <div class="trade-margin-heading-right pt-xxl-0 pt-4">
+              <!-- Button trigger modal -->
+              <div
+                type="button"
+                class="video-btn d-flex align-items-center gap-2"
+                data-bs-toggle="modal"
+                data-src="https://www.youtube.com/embed/Jfrjeg26Cwk"
+                data-bs-target="#spotTutorials"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-play-circle"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="10 8 16 12 10 16 10 8" />
+                </svg>
+                Spot tutorial
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="spotTutorials"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="ratio ratio-16x9">
+                        <iframe
+                          class="embed-responsive-item"
+                          src=""
+                          id="video"
+                          allowscriptaccess="always"
+                          allow="autoplay"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trade-margin-inner-wrap">
+            <div class="trade-margin-inner-left">
+              <div
+                class="left-top d-flex align-items-center justify-content-between"
+              >
+                <ul
+                  class="nav nav-pills gap-2 gap-xxl-3"
+                  id="pills-tab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="css-3kwgah"
+                      >
+                        <path d="M4 4h7v7H4V4z" fill="#F82323F9"></path>
+                        <path d="M4 13h7v7H4v-7z" fill="#6ACEB6F9"></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 4h7v4h-7V4zm0 6h7v4h-7v-4zm7 6h-7v4h7v-4z"
+                          fill="#888888"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="css-3kwgah"
+                      >
+                        <path d="M4 4h7v16H4V4z" fill="#6ACEB6F9"></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 4h7v4h-7V4zm0 6h7v4h-7v-4zm7 6h-7v4h7v-4z"
+                          fill="#888888"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-contact-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-contact"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-contact"
+                      aria-selected="false"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="css-3kwgah"
+                      >
+                        <path d="M4 4h7v16H4V4z" fill="#F82323F9"></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 4h7v4h-7V4zm0 6h7v4h-7v-4zm7 6h-7v4h7v-4z"
+                          fill="#888888"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                  <select class="theme-select-input">
+                    <option value="1">0.1</option>
+                    <option value="1">0.01</option>
+                    <option value="10">10</option>
+                    <option value="2">2</option>
+                    <option value="50">50</option>
+                  </select>
+                  <div class="dropstart text-end ms-3">
+                    <button
+                      type="button"
+                      class="bg-transparent dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="true"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#888888"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-more-vertical"
+                      >
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="5" r="1"></circle>
+                        <circle cx="12" cy="19" r="1"></circle>
+                      </svg>
+                    </button>
+                    <ul
+                      class="dropdown-menu py-2 px-3"
+                      style="
+                        position: absolute;
+                        inset: 0px 0px auto auto;
+                        margin: 0px;
+                        transform: translate(-26px, 0px);
+                      "
+                      data-popper-placement="left-start"
+                    >
+                      <div class="form-check d-flex align-items-center mb-0">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="displayAvg"
+                        />
+                        <label class="form-check-label" for="displayAvg">
+                          Display Avg.&Sum
+                        </label>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content left-main-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                >
+                  <div
+                    class="left-main-content-header-items d-flex align-items-end justify-content-between"
+                  >
+                    <div class="left-main-content-header-item">
+                      <h3 class="section-des color-343434F9">Price (USDT)</h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3 class="section-des color-343434F9">Amount (BTC)</h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3 class="section-des color-343434F9">Total</h3>
+                    </div>
+                  </div>
+                  <div class="left-main-content-items-wrap">
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                >
+                  <div
+                    class="left-main-content-header-items d-flex align-items-end justify-content-between"
+                  >
+                    <div class="left-main-content-header-item">
+                      <h3 class="section-des color-343434F9">Price (USDT)</h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3 class="section-des color-343434F9">Amount (BTC)</h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3 class="section-des color-343434F9">Total</h3>
+                    </div>
+                  </div>
+                  <div class="left-main-content-items-wrap">
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.2069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.9869</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">5.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">3.0569</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.9069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">9.6569</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
+                >
+                  <div
+                    class="left-main-content-header-items d-flex align-items-end justify-content-between"
+                  >
+                    <div class="left-main-content-header-item">
+                      <h3 class="section-des color-343434F9">Price (USDT)</h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3 class="section-des color-343434F9">Amount (BTC)</h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3 class="section-des color-343434F9">Total</h3>
+                    </div>
+                  </div>
+                  <div class="left-main-content-items-wrap">
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0569</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">5.0049</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">8.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">8187.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">8.0045</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">5.241.11</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">7813.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.1569</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.214.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2155.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">8913.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.5769</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">9.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0669</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0669</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0569</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0449</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0349</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0669</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.656.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">4.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.233.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="trade-margin-inner-middle">
+              <div class="pb-30">
+                <canvas id="myChart"></canvas>
+              </div>
+              <div class="spot-record-wrap">
+                <div
+                  class="spot-top-title-wrap d-flex align-items-center justify-content-between"
+                >
+                  <h3 class="section-des position-relative">Spot</h3>
+                  <button
+                    type="button"
+                    class="bg-transparent"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="true"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#888888"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-more-vertical"
+                    >
+                      <circle cx="12" cy="12" r="1"></circle>
+                      <circle cx="12" cy="5" r="1"></circle>
+                      <circle cx="12" cy="19" r="1"></circle>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="spot-items d-flex gap-3 pt-3 pb-20">
+                  <li class="section-des active cursor-pointer">Limit</li>
+                  <li class="section-des cursor-pointer">Market</li>
+                  <li
+                    class="section-des cursor-pointer spot-linit-item position-relative"
+                  >
+                    Stop-Limit
+                  </li>
+                  <li>
+                    <svg
+                      class="ms-2"
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="#888888"
+                        d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div
+                    class="d-flex align-items-center justify-content-between pb-3"
+                  >
+                    <p class="section-des">Avbl</p>
+                    <p class="section-des">- BNB</p>
+                  </div>
+                  <div
+                    class="spot-price-wrap d-flex align-items-center justify-content-between mb-20"
+                  >
+                    <p class="section-des spot-price-role">Price</p>
+                    <p class="section-des fw-light">0.17654 BNB</p>
+                  </div>
+                  <div
+                    class="spot-price-wrap d-flex align-items-center justify-content-between"
+                  >
+                    <p class="section-des spot-price-role">Amount</p>
+                    <p class="section-des fw-light">AVAX</p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between position-relative range-bobble-wrap"
+                  >
+                    <div class="range-bobble active"></div>
+                    <div class="range-bobble"></div>
+                    <div class="range-bobble"></div>
+                    <div class="range-bobble"></div>
+                    <div class="range-bobble"></div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div
+                    class="d-flex align-items-center justify-content-between pb-3"
+                  >
+                    <p class="section-des">Avbl</p>
+                    <p class="section-des">- AVAX</p>
+                  </div>
+                  <div
+                    class="spot-price-wrap d-flex align-items-center justify-content-between mb-20"
+                  >
+                    <p class="section-des spot-price-role">Price</p>
+                    <p class="section-des fw-light">0.17654 BNB</p>
+                  </div>
+                  <div
+                    class="spot-price-wrap d-flex align-items-center justify-content-between"
+                  >
+                    <p class="section-des spot-price-role">Price</p>
+                    <p class="section-des fw-light">0.17654 BNB</p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between position-relative range-bobble-wrap"
+                  >
+                    <div class="range-bobble active"></div>
+                    <div class="range-bobble"></div>
+                    <div class="range-bobble"></div>
+                    <div class="range-bobble"></div>
+                    <div class="range-bobble"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="trade-margin-inner-left trade-margin-inner-right">
+              <div
+                class="left-top d-flex align-items-center justify-content-between"
+              >
+                <div
+                  class="nav nav-pills gap-3 owl-carousel trade-margin-curr"
+                  id="pills-tab"
+                  role="tablist"
+                >
+                  <div class="nav-item" role="presentation">
+                    <button
+                      class="nav-link section-des color-343434F9 active"
+                      id="pills-currency-1-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-currency-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-currency-1"
+                      aria-selected="true"
+                    >
+                      BUS
+                    </button>
+                  </div>
+                  <div class="nav-item" role="presentation">
+                    <button
+                      class="nav-link section-des color-343434F9"
+                      id="pills-currency-2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-currency-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-currency-2"
+                      aria-selected="false"
+                    >
+                      USD
+                    </button>
+                  </div>
+                  <div class="nav-item" role="presentation">
+                    <button
+                      class="nav-link section-des color-343434F9"
+                      id="pills-currency-3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-currency-3"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-currency-3"
+                      aria-selected="false"
+                    >
+                      BNB
+                    </button>
+                  </div>
+                  <div class="nav-item" role="presentation">
+                    <button
+                      class="nav-link section-des color-343434F9"
+                      id="pills-currency-4-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-currency-4"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-currency-4"
+                      aria-selected="false"
+                    >
+                      BTC
+                    </button>
+                  </div>
+                  <div class="nav-item" role="presentation">
+                    <button
+                      class="nav-link section-des color-343434F9"
+                      id="pills-currency-5-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-currency-5"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-currency-5"
+                      aria-selected="false"
+                    >
+                      USD
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content left-main-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-currency-1"
+                  role="tabpanel"
+                  aria-labelledby="pills-currency-1-tab"
+                >
+                  <div
+                    class="left-main-content-header-items d-flex align-items-end justify-content-between"
+                  >
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-arrow"
+                      >
+                        Pair
+                      </h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-arrow"
+                      >
+                        Price
+                      </h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-right-arrow"
+                      >
+                        Change
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="left-main-content-items-wrap">
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-6ACEB6F9">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-6ACEB6F9">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-6ACEB6F9">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">6.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-currency-2"
+                  role="tabpanel"
+                  aria-labelledby="pills-currency-2-tab"
+                >
+                  <div
+                    class="left-main-content-header-items d-flex align-items-end justify-content-between"
+                  >
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-arrow"
+                      >
+                        Pair
+                      </h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-arrow"
+                      >
+                        Price
+                      </h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-right-arrow"
+                      >
+                        Change
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="left-main-content-items-wrap">
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">4.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">4.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">4.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">4.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-currency-3"
+                  role="tabpanel"
+                  aria-labelledby="pills-currency-3-tab"
+                >
+                  <div
+                    class="left-main-content-header-items d-flex align-items-end justify-content-between"
+                  >
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-arrow"
+                      >
+                        Pair
+                      </h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-arrow"
+                      >
+                        Price
+                      </h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-right-arrow"
+                      >
+                        Change
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="left-main-content-items-wrap">
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="left-main-content-items-wrap">
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="left-main-content-items-wrap">
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-currency-4"
+                  role="tabpanel"
+                  aria-labelledby="pills-currency-4-tab"
+                >
+                  <div
+                    class="left-main-content-header-items d-flex align-items-end justify-content-between"
+                  >
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-arrow"
+                      >
+                        Pair
+                      </h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-arrow"
+                      >
+                        Price
+                      </h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-right-arrow"
+                      >
+                        Change
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="left-main-content-items-wrap">
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-currency-5"
+                  role="tabpanel"
+                  aria-labelledby="pills-currency-5-tab"
+                >
+                  <div
+                    class="left-main-content-header-items d-flex align-items-end justify-content-between"
+                  >
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-arrow"
+                      >
+                        Pair
+                      </h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-arrow"
+                      >
+                        Price
+                      </h3>
+                    </div>
+                    <div class="left-main-content-header-item">
+                      <h3
+                        class="section-des color-343434F9 position-relative data-right-arrow"
+                      >
+                        Change
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="left-main-content-items-wrap">
+                    <div
+                      class="left-main-content-items d-flex align-items-end justify-content-between"
+                    >
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt color-F82323F9">2113.11</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">0.0069</p>
+                      </div>
+                      <div class="left-main-content-item">
+                        <p class="db-data-txt">1.206.19</p>
+                      </div>
+                    </div>
+                    <div class="left-main-content-items-wrap">
+                      <div
+                        class="left-main-content-items d-flex align-items-end justify-content-between"
+                      >
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt color-F82323F9">2113.11</p>
+                        </div>
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt">0.0069</p>
+                        </div>
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt">1.206.19</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-main-content-items-wrap">
+                      <div
+                        class="left-main-content-items d-flex align-items-end justify-content-between"
+                      >
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt color-F82323F9">2113.11</p>
+                        </div>
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt">0.0069</p>
+                        </div>
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt">1.206.19</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-main-content-items-wrap">
+                      <div
+                        class="left-main-content-items d-flex align-items-end justify-content-between"
+                      >
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt color-F82323F9">2113.11</p>
+                        </div>
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt">0.0069</p>
+                        </div>
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt">1.206.19</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-main-content-items-wrap">
+                      <div
+                        class="left-main-content-items d-flex align-items-end justify-content-between"
+                      >
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt color-F82323F9">2113.11</p>
+                        </div>
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt">0.0069</p>
+                        </div>
+                        <div class="left-main-content-item">
+                          <p class="db-data-txt">1.206.19</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <ul class="trade-footer nav gap-5 py-4">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Open Orders <span> (0)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Open History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Trade History </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Funds</a>
-                </li>
+        <ul class="trade-footer nav gap-5 py-4">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"
+              >Open Orders <span> (0)</span> <i class="fa fa-sort-desc"></i
+            ></a>
+            <ul class="footer-dropdown">
+              <li><a href="#">Items 1</a></li>
+              <li><a href="#">Items 2</a></li>
+              <li><a href="#">Items 3</a></li>
             </ul>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Open History <i class="fa fa-sort-desc"></i
+            ></a>
+            <ul class="footer-dropdown">
+              <li><a href="#">Items 1</a></li>
+              <li><a href="#">Items 2</a></li>
+              <li><a href="#">Items 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Trade History <i class="fa fa-sort-desc"></i
+            ></a>
+            <ul class="footer-dropdown">
+              <li><a href="#">Items 1</a></li>
+              <li><a href="#">Items 2</a></li>
+              <li><a href="#">Items 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Funds <i class="fa fa-sort-desc"></i
+            ></a>
+            <ul class="footer-dropdown">
+              <li><a href="#">Items 1</a></li>
+              <li><a href="#">Items 2</a></li>
+              <li><a href="#">Items 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Jquery JS-->
     <script src="assets/js/vendor/jquery.min.js"></script>
     <!-- Bootstrap Bundle JS-->
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/highcharts.min.js"></script>
     <!-- main menu js -->
     <script src="assets/js/vendor/jquery.meanmenu.js"></script>
     <!-- owl carousel js -->
@@ -1069,53 +2289,90 @@
     <script src="assets/js/vendor/countrySelect.js"></script>
     <!-- Font Awesome  -->
     <script src="https://kit.fontawesome.com/a88d68a587.js"></script>
+    <!-- js chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <!-- date picker -->
-    <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <!-- Language Picker js -->
     <script src="assets/js/language-picker.js"></script>
+    <!-- dark mode js -->
+    <script src="assets/js/vendor/dark.js"></script>
     <!-- Theme Main JS-->
     <script src="assets/js/main.js"></script>
+
     <script>
-        jQuery(document).ready(function($) {
-            $('#trade-top-up-arrow').hide();
-            $("#trade-top-down-arrow").click(function() {
-                $('.trade-margin-top-bar').addClass('trade-margin-top-bar-expand');
-                $('#trade-top-up-arrow').show();
-                $('#trade-top-down-arrow').hide();
-            });
-            $("#trade-top-up-arrow").click(function() {
-                $('.trade-margin-top-bar').removeClass('trade-margin-top-bar-expand');
-                $('#trade-top-up-arrow').hide();
-                $('#trade-top-down-arrow').show();
-            });
+      var xValues = [];
+      var yValues = [];
+      generateData('Math.sin(x)', 0, 10, 0.5);
 
-            // Gets the video src from the data-src on each button
+      new Chart('myChart', {
+        type: 'line',
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              fill: false,
+              pointRadius: 2,
+              borderColor: '#6aceb6f9',
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: {
+            display: false,
+          },
+          title: {
+            display: true,
+            // text: "y = x * 2 + 7",
+            fontSize: 16,
+          },
+        },
+      });
 
-            var $videoSrc;
-            $('.video-btn').click(function() {
-                $videoSrc = $(this).data("src");
-            });
-            console.log($videoSrc);
-
-
-
-            // when the modal is opened autoplay it  
-            $('#spotTutorials').on('shown.bs.modal', function(e) {
-
-                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-                $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-            })
-
-
-
-            // stop playing the youtube video when I close the modal
-            $('#spotTutorials').on('hide.bs.modal', function(e) {
-                // a poor man's stop video
-                $("#video").attr('src', $videoSrc);
-            })
-
-        });
+      function generateData(value, i1, i2, step = 1) {
+        for (let x = i1; x <= i2; x += step) {
+          yValues.push(eval(value));
+          xValues.push(x);
+        }
+      }
     </script>
-</body>
 
+    <script>
+      jQuery(document).ready(function ($) {
+        $('#trade-top-up-arrow').hide();
+        $('#trade-top-down-arrow').click(function () {
+          $('.trade-margin-top-bar').addClass('trade-margin-top-bar-expand');
+          $('#trade-top-up-arrow').show();
+          $('#trade-top-down-arrow').hide();
+        });
+        $('#trade-top-up-arrow').click(function () {
+          $('.trade-margin-top-bar').removeClass('trade-margin-top-bar-expand');
+          $('#trade-top-up-arrow').hide();
+          $('#trade-top-down-arrow').show();
+        });
+
+        // Gets the video src from the data-src on each button
+
+        var $videoSrc;
+        $('.video-btn').click(function () {
+          $videoSrc = $(this).data('src');
+        });
+        console.log($videoSrc);
+        // when the modal is opened autoplay it
+        $('#spotTutorials').on('shown.bs.modal', function (e) {
+          // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+          $('#video').attr(
+            'src',
+            $videoSrc + '?autoplay=1&amp;modestbranding=1&amp;showinfo=0'
+          );
+        });
+        // stop playing the youtube video when I close the modal
+        $('#spotTutorials').on('hide.bs.modal', function (e) {
+          // a poor man's stop video
+          $('#video').attr('src', $videoSrc);
+        });
+      });
+    </script>
+  </body>
 </html>
